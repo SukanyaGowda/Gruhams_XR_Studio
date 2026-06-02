@@ -892,19 +892,7 @@ main {
 }
 
 .plans-bg-text {
-  position: absolute;
-  top: 50%;
-  left: -1%;
-  transform: translateY(-50%);
-  font-size: 12rem;
-  font-weight: 900;
-  color: transparent;
-  -webkit-text-stroke: 3px rgba(0, 0, 0, 0.12);
-  letter-spacing: 12px;
-  pointer-events: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-  user-select: none;
+  display: none;
 }
 
 .pricing-main-title {
@@ -938,6 +926,8 @@ main {
   box-shadow: none;
   margin-top: 2rem;
   border: 1px solid #eee;
+  color: #111;
+  /* Explicitly set dark color for visibility on light cards */
 }
 
 /* Left card - round left corners only */

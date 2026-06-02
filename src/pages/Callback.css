@@ -1,0 +1,219 @@
+.callback-page {
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 120px;
+    padding-bottom: 5rem;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.callback-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clarity-call-tag {
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.callback-title {
+    font-size: 5.5rem;
+    font-weight: 950;
+    color: #32CD32;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+/* More Compact Dark Booking Widget */
+.callback-widget {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    max-width: 780px;
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: left;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8);
+    border: 1px solid #333;
+}
+
+.widget-main-title {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.info-box-callback {
+    border: 1px solid #333;
+    padding: 1.25rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #aaa;
+}
+
+.selection-area {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 2.5rem;
+}
+
+.area-title {
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-bottom: 1.25rem;
+}
+
+/* Reduced size Calendar */
+.mini-calendar-dark {
+    background: transparent;
+}
+
+.calendar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.month-display {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.nav-arr {
+    background: #333;
+    border: none;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.cal-grid-dark {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+
+.day-name {
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: #666;
+    text-align: center;
+    padding-bottom: 0.8rem;
+}
+
+.day-num {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.2s;
+    margin: 0 auto;
+}
+
+.day-num:hover {
+    background: #222;
+}
+
+.day-num.active-day {
+    background: #32CD32 !important;
+    color: #000 !important;
+    box-shadow: 0 0 10px rgba(50, 205, 50, 0.4);
+}
+
+.day-num.available-dot {
+    position: relative;
+}
+
+.day-num.available-dot::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    width: 3px;
+    height: 3px;
+    background: #32CD32;
+    border-radius: 50%;
+}
+
+/* Time slots styling */
+.time-slots-callback {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.time-btn-callback {
+    background: transparent;
+    border: 1px solid #32CD32;
+    color: #32CD32;
+    padding: 1rem;
+    font-weight: 900;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.time-btn-callback:hover {
+    background: rgba(50, 205, 50, 0.1);
+}
+
+.time-btn-callback.selected-time {
+    background: #32CD32;
+    color: #000;
+}
+
+@media (max-width: 900px) {
+    .callback-title {
+        font-size: 3rem;
+    }
+
+    .selection-area {
+        grid-template-columns: 1fr;
+    }
+
+    .callback-widget {
+        padding: 1.5rem;
+    }
+}

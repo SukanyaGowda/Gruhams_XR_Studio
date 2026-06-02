@@ -14,10 +14,11 @@ function Home() {
                     <iframe
                         width="100%"
                         height="100%"
-                        src="https://www.youtube.com/embed/Dyuy7D31mZ0?autoplay=1&mute=1&controls=0&loop=1&playlist=Dyuy7D31mZ0&start=16&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1"
+                        src="https://www.youtube.com/embed/Dyuy7D31mZ0?autoplay=1&mute=1&controls=0&loop=1&playlist=Dyuy7D31mZ0&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1"
                         title="Background Video"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
                     ></iframe>
                 </div>
             </header>
@@ -124,7 +125,7 @@ function Home() {
                     <div className="callout-video-main">
                         <div className="video-aspect-ratio">
                             <iframe
-                                src="https://www.youtube.com/embed/e_w_OJaHtvY?autoplay=1&mute=1&controls=0&loop=1&playlist=e_w_OJaHtvY&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1"
+                                src="https://www.youtube.com/embed/Dyuy7D31mZ0?autoplay=1&mute=1&controls=0&loop=1&playlist=Dyuy7D31mZ0&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1"
                                 title="Gruhams XR Studio Experience"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -343,7 +344,7 @@ function Home() {
 
                     <div className="video-aspect-ratio" style={{ paddingBottom: '50%', marginBottom: '3rem' }}>
                         <iframe
-                            src="https://www.youtube.com/embed/Dyuy7D31mZ0?autoplay=1&mute=1&controls=0&loop=1&playlist=Dyuy7D31mZ0&start=16&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1"
+                            src="https://www.youtube.com/embed/Dyuy7D31mZ0?autoplay=1&mute=1&controls=0&loop=1&playlist=Dyuy7D31mZ0&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1"
                             title="Event Hosting Experience"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

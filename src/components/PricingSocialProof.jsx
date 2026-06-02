@@ -4,12 +4,12 @@ const PricingSocialProof = () => {
     return (
         <section className="pricing-social-proof" style={{ padding: '2rem 0', background: '#fff' }}>
             <div className="container">
-                {/* Video First */}
+                {/* 1. Video: Walkthrough Demo (Clean Embed) */}
                 <div className="callout-video-main" style={{ marginBottom: '2rem' }}>
                     <div className="video-aspect-ratio" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', boxShadow: '0 20px 50px rgba(0,0,0,0.1)' }}>
                         <iframe
-                            src="https://www.youtube.com/embed/e_w_OJaHtvY?autoplay=1&mute=1&controls=1&loop=1&playlist=e_w_OJaHtvY&modestbranding=1&rel=0"
-                            title="Gruhams XR Studio Experience"
+                            src="https://www.youtube.com/embed/Dyuy7D31mZ0?autoplay=1&mute=1&controls=0&loop=1&playlist=Dyuy7D31mZ0&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1"
+                            title="Gruhams XR Studio Walkthrough"
                             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -18,7 +18,7 @@ const PricingSocialProof = () => {
                     </div>
                 </div>
 
-                {/* Google Reviews Second - One Row */}
+                {/* 2. Google Reviews */}
                 <div className="reviews-top-stars-left" style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
                     <p style={{ fontSize: '1rem', fontWeight: 800, textTransform: 'uppercase', marginBottom: '0.2rem' }}>hundreds of 5 star Google reviews</p>
                     <div className="stars-large" style={{ fontSize: '2rem', color: '#ffb700' }}>★★★★★</div>

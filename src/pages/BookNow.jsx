@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './BookNow.css';
 import bookingBg from '../assets/booking-bg.png';
+import PricingCards from '../components/PricingCards';
+import BookNowSocialProof from '../components/BookNowSocialProof';
 
 const BookNow = () => {
     const [viewDate, setViewDate] = useState(new Date(2026, 5, 1));
     const [selectedDay, setSelectedDay] = useState(3);
-    const [selectedTime, setSelectedTime] = useState("11:00 AM"); // Set default to the popular one
+    const [selectedTime, setSelectedTime] = useState("11:00 AM");
 
     const [formData, setFormData] = useState({
         name: '',
@@ -52,13 +54,33 @@ const BookNow = () => {
     };
 
     return (
-        <div
-            className="book-now-page"
-            style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(${bookingBg})`
-            }}
-        >
-            <div className="book-now-container centered">
+        <div className="page book-now-page" style={{ position: 'relative', overflow: 'hidden' }}>
+            <div className="video-background" style={{
+                position: 'fixed',
+                top: '50%',
+                left: '50%',
+                width: '100vw',
+                height: '56.25vw',
+                minHeight: '100vh',
+                minWidth: '177.77vh',
+                transform: 'translate(-50%, -50%)',
+                zIndex: -1,
+                pointerEvents: 'none',
+                opacity: 0.6
+            }}>
+                <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/Dyuy7D31mZ0?autoplay=1&mute=1&controls=0&loop=1&playlist=Dyuy7D31mZ0&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1"
+                    title="Background Video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                ></iframe>
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%)' }}></div>
+            </div>
+
+            <div className="book-now-container centered" style={{ position: 'relative', zIndex: 1, padding: '10rem 2rem' }}>
                 <div className="info-column centered-content">
                     <h1 className="select-title">SELECT YOUR WALKTHROUGH APPOINTMENT</h1>
 
@@ -170,6 +192,19 @@ const BookNow = () => {
                         </button>
                     </div>
                 </div>
+            </div>
+
+            {/* Added Pricing Plans */}
+            <div className="book-plans-section">
+                <div className="book-plans-title-area">
+                    <h2 className="book-plans-title">Walk-Through Sessions</h2>
+                </div>
+                <PricingCards />
+            </div>
+
+            {/* Use dedicated BookNowSocialProof to avoid affecting Pricing page */}
+            <div className="book-social-proof-wrapper">
+                <BookNowSocialProof />
             </div>
         </div>
     );

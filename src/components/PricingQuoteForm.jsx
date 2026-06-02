@@ -27,53 +27,65 @@ const PricingQuoteForm = () => {
                     textAlign: 'left'
                 }}>
                     <form onSubmit={(e) => e.preventDefault()}>
-                        <div style={{ marginBottom: '1.5rem' }}>
-                            <label style={{ display: 'block', fontWeight: 700, marginBottom: '0.5rem', fontSize: '1rem' }}>Full Name *</label>
+                        <div style={{ marginBottom: '2rem' }}>
+                            <label style={{ display: 'block', fontWeight: 950, marginBottom: '0.8rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px', color: '#444' }}>Full Name *</label>
                             <input
                                 type="text"
                                 required
                                 style={{
                                     width: '100%',
-                                    padding: '1rem',
-                                    borderRadius: '50px',
-                                    border: '1px dashed #ccc',
+                                    padding: '1.2rem 1.5rem',
+                                    borderRadius: '12px',
+                                    border: '2px solid #eee',
                                     fontSize: '1rem',
-                                    outline: 'none'
+                                    fontWeight: 600,
+                                    outline: 'none',
+                                    transition: 'border-color 0.3s ease'
                                 }}
+                                onFocus={(e) => e.target.style.borderColor = '#32CD32'}
+                                onBlur={(e) => e.target.style.borderColor = '#eee'}
                             />
                         </div>
 
-                        <div style={{ marginBottom: '1.5rem' }}>
-                            <label style={{ display: 'block', fontWeight: 700, marginBottom: '0.5rem', fontSize: '1rem' }}>Mobile number *</label>
+                        <div style={{ marginBottom: '2rem' }}>
+                            <label style={{ display: 'block', fontWeight: 950, marginBottom: '0.8rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px', color: '#444' }}>Mobile number *</label>
                             <input
                                 type="tel"
                                 required
                                 style={{
                                     width: '100%',
-                                    padding: '1rem',
-                                    borderRadius: '50px',
-                                    border: '1px dashed #ccc',
+                                    padding: '1.2rem 1.5rem',
+                                    borderRadius: '12px',
+                                    border: '2px solid #eee',
                                     fontSize: '1rem',
-                                    outline: 'none'
+                                    fontWeight: 600,
+                                    outline: 'none',
+                                    transition: 'border-color 0.3s ease'
                                 }}
+                                onFocus={(e) => e.target.style.borderColor = '#32CD32'}
+                                onBlur={(e) => e.target.style.borderColor = '#eee'}
                             />
                         </div>
 
-                        <div style={{ marginBottom: '2.5rem' }}>
-                            <label style={{ display: 'block', fontWeight: 700, marginBottom: '0.5rem', fontSize: '1rem' }}>Email *</label>
+                        <div style={{ marginBottom: '3rem' }}>
+                            <label style={{ display: 'block', fontWeight: 950, marginBottom: '0.8rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px', color: '#444' }}>Email *</label>
                             <div style={{ position: 'relative' }}>
-                                <span style={{ position: 'absolute', left: '1.2rem', top: '50%', transform: 'translateY(-50%)', color: '#666' }}>✉</span>
+                                <span style={{ position: 'absolute', left: '1.2rem', top: '50%', transform: 'translateY(-50%)', color: '#aaa', fontSize: '1.2rem' }}>✉</span>
                                 <input
                                     type="email"
                                     required
                                     style={{
                                         width: '100%',
-                                        padding: '1rem 1rem 1rem 3rem',
-                                        borderRadius: '50px',
-                                        border: '1px dashed #ccc',
+                                        padding: '1.2rem 1.5rem 1.2rem 3.5rem',
+                                        borderRadius: '12px',
+                                        border: '2px solid #eee',
                                         fontSize: '1rem',
-                                        outline: 'none'
+                                        fontWeight: 600,
+                                        outline: 'none',
+                                        transition: 'border-color 0.3s ease'
                                     }}
+                                    onFocus={(e) => e.target.style.borderColor = '#32CD32'}
+                                    onBlur={(e) => e.target.style.borderColor = '#eee'}
                                 />
                             </div>
                         </div>
@@ -82,17 +94,20 @@ const PricingQuoteForm = () => {
                             type="submit"
                             style={{
                                 width: '100%',
-                                padding: '1.2rem',
-                                borderRadius: '50px',
-                                background: '#00D600',
-                                color: '#fff',
+                                padding: '1.5rem',
+                                borderRadius: '60px',
+                                background: '#32CD32',
+                                color: '#000',
                                 border: 'none',
                                 fontSize: '1.2rem',
-                                fontWeight: 900,
+                                fontWeight: 950,
                                 textTransform: 'uppercase',
                                 cursor: 'pointer',
-                                transition: 'background 0.3s'
+                                boxShadow: '0 15px 35px rgba(50,205,50,0.3)',
+                                transition: 'all 0.3s ease'
                             }}
+                            onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-3px)'}
+                            onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
                         >
                             GET YOUR PERSONALISED QUOTE
                         </button>

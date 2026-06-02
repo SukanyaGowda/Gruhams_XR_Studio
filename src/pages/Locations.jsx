@@ -1,72 +1,197 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import kitchenTopView from '../assets/studio_kitchen_top_view_1780402659062.png';
 
 function Locations() {
     const locations = [
         {
             city: "Bangalore",
             address: "Sree Sai heights, 3rd floor, ideal home town ship, Rajarajeshwari Nagar, Bangalore - 560098",
-            status: "Flagship Studio",
+            status: "FLAGSHIP STUDIO",
             phone: "+91 99000 00000",
-            email: "gruhams@gmail.com"
+            email: "info@gruhams.com",
+            isLive: true
         },
-        { city: "Coming Soon", address: "Mumbai", status: "Waitlist" },
-        { city: "Coming Soon", address: "Hyderabad", status: "Waitlist" }
+        {
+            city: "Mumbai",
+            address: "Strategic Location Coming Soon",
+            status: "UNDER DEVELOPMENT",
+            isLive: false
+        },
+        {
+            city: "Hyderabad",
+            address: "Studio Design In Progress",
+            status: "COMMING SOON",
+            isLive: false
+        }
     ];
 
     return (
         <div className="page locations-page">
-            <header className="page-header dark" style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                <div className="container">
-                    <h1 style={{ fontSize: '4.5rem', fontWeight: 900, color: '#D4AF37', textTransform: 'uppercase', letterSpacing: '-2px' }}>Our Locations</h1>
-                    <p style={{ fontSize: '1.2rem', fontWeight: 700, opacity: 0.8 }}>Visit a Gruhams_XR_Studio near you to experience your project at 1:1 scale.</p>
+            {/* HERO SECTION WITH VIDEO */}
+            <header className="locations-hero" style={{
+                position: 'relative',
+                height: '500px',
+                backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 100%), url(${kitchenTopView})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                textAlign: 'center'
+            }}>
+                <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+                    <h1 style={{
+                        fontSize: '5rem',
+                        fontWeight: 950,
+                        color: '#32CD32',
+                        textTransform: 'uppercase',
+                        letterSpacing: '-2px',
+                        textShadow: '0 5px 20px rgba(0,0,0,0.5)'
+                    }}>
+                        LOCATIONS
+                    </h1>
+                    <p style={{
+                        fontSize: '1.4rem',
+                        color: '#fff',
+                        fontWeight: 700,
+                        maxWidth: '700px',
+                        margin: '1rem auto 0',
+                        opacity: 0.9
+                    }}>
+                        Experience the world's most advanced 1:1 scale planning studio near you.
+                    </p>
                 </div>
             </header>
 
-            <div className="container" style={{ paddingBottom: '10rem' }}>
-                <div style={{ display: 'flex', justifyContent: 'center', gap: '2.5rem', flexWrap: 'wrap' }}>
-                    {locations.map((loc, i) => (
-                        <div key={i} className="location-card" style={{
-                            background: '#fff',
-                            padding: '3.5rem 2.5rem',
-                            borderRadius: '30px',
-                            boxShadow: '0 20px 50px rgba(0,0,0,0.06)',
-                            border: '1px solid #f0f0f0',
-                            width: '100%',
-                            maxWidth: '380px',
-                            textAlign: 'left',
-                            position: 'relative',
-                            overflow: 'hidden',
-                            transition: 'transform 0.3s'
-                        }}>
-                            <div style={{
-                                position: 'absolute',
-                                top: 0,
-                                left: 0,
-                                width: '6px',
-                                height: '100%',
-                                background: loc.status === 'Flagship Studio' ? '#D4AF37' : '#eee'
-                            }}></div>
-
-                            <div style={{ color: '#D4AF37', fontWeight: 900, fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '1.5rem', letterSpacing: '1px' }}>
-                                {loc.status}
-                            </div>
-                            <h3 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '1.5rem', color: '#000' }}>{loc.city}</h3>
-                            <p style={{ fontSize: '1.1rem', fontWeight: 700, opacity: 0.7, marginBottom: '2.5rem', minHeight: '4.5rem', lineHeight: '1.6' }}>{loc.address}</p>
-
-                            {loc.phone && (
-                                <div style={{ marginBottom: '2rem' }}>
-                                    <p style={{ fontSize: '0.9rem', fontWeight: 900, color: '#000', marginBottom: '0.3rem' }}>PHONE</p>
-                                    <p style={{ fontSize: '1.1rem', fontWeight: 700, opacity: 0.8 }}>{loc.phone}</p>
+            {/* LOCATION CARDS SECTION */}
+            <section className="locations-list" style={{ padding: '8rem 2rem', background: '#fff' }}>
+                <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+                        gap: '3rem'
+                    }}>
+                        {locations.map((loc, i) => (
+                            <div key={i} style={{
+                                background: loc.isLive ? '#fff' : '#f9f9f9',
+                                padding: '4rem 3rem',
+                                borderRadius: '40px',
+                                boxShadow: loc.isLive ? '0 30px 60px rgba(0,0,0,0.08)' : 'none',
+                                border: loc.isLive ? '1px solid #f0f0f0' : '1px dashed #ddd',
+                                textAlign: 'left',
+                                position: 'relative',
+                                display: 'flex',
+                                flexDirection: 'column'
+                            }}>
+                                {/* Status Badge */}
+                                <div style={{
+                                    display: 'inline-block',
+                                    padding: '0.5rem 1.2rem',
+                                    background: loc.isLive ? '#32CD32' : '#eee',
+                                    color: loc.isLive ? '#fff' : '#888',
+                                    borderRadius: '50px',
+                                    fontSize: '0.8rem',
+                                    fontWeight: 900,
+                                    letterSpacing: '1px',
+                                    marginBottom: '2rem',
+                                    alignSelf: 'flex-start'
+                                }}>
+                                    {loc.status}
                                 </div>
-                            )}
 
-                            <button className="gold-button-pill" style={{ width: '100%', justifyContent: 'center' }}>
-                                GET DIRECTIONS
-                            </button>
-                        </div>
-                    ))}
+                                <h3 style={{
+                                    fontSize: '3rem',
+                                    fontWeight: 950,
+                                    color: loc.isLive ? '#000' : '#aaa',
+                                    marginBottom: '1.5rem',
+                                    letterSpacing: '-1px'
+                                }}>
+                                    {loc.city}
+                                </h3>
+
+                                <p style={{
+                                    fontSize: '1.15rem',
+                                    fontWeight: 600,
+                                    color: loc.isLive ? '#555' : '#bbb',
+                                    marginBottom: '3rem',
+                                    lineHeight: '1.7',
+                                    minHeight: '4.5rem'
+                                }}>
+                                    {loc.address}
+                                </p>
+
+                                {loc.isLive ? (
+                                    <div style={{ marginTop: 'auto' }}>
+                                        <div style={{ marginBottom: '2.5rem' }}>
+                                            <div style={{ fontSize: '0.85rem', fontWeight: 900, color: '#aaa', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Phone</div>
+                                            <div style={{ fontSize: '1.2rem', fontWeight: 800, color: '#000' }}>{loc.phone}</div>
+                                        </div>
+                                        <button className="lime-button-pill" style={{
+                                            width: '100%',
+                                            background: '#000',
+                                            color: '#32CD32',
+                                            padding: '1.2rem',
+                                            borderRadius: '50px',
+                                            border: 'none',
+                                            fontSize: '1rem',
+                                            fontWeight: 900,
+                                            cursor: 'pointer',
+                                            textTransform: 'uppercase',
+                                            letterSpacing: '1px',
+                                            transition: 'all 0.3s'
+                                        }} onMouseOver={(e) => {
+                                            e.currentTarget.style.background = '#32CD32';
+                                            e.currentTarget.style.color = '#fff';
+                                        }} onMouseOut={(e) => {
+                                            e.currentTarget.style.background = '#000';
+                                            e.currentTarget.style.color = '#32CD32';
+                                        }}>
+                                            GET DIRECTIONS
+                                        </button>
+                                    </div>
+                                ) : (
+                                    <div style={{ marginTop: 'auto', textAlign: 'center', padding: '2rem', border: '2px dashed #eee', borderRadius: '20px' }}>
+                                        <p style={{ fontSize: '0.9rem', fontWeight: 800, color: '#ccc', textTransform: 'uppercase' }}>Coming Soon</p>
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            {/* EXPANSION CALLOUT */}
+            <section className="expansion-callout" style={{
+                padding: '10rem 2rem',
+                background: '#000',
+                textAlign: 'center',
+                color: '#fff'
+            }}>
+                <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
+                    <h2 style={{ fontSize: '3.5rem', fontWeight: 950, color: '#32CD32', marginBottom: '1.5rem', textTransform: 'uppercase' }}>
+                        Growing Globally
+                    </h2>
+                    <p style={{ fontSize: '1.3rem', fontWeight: 700, opacity: 0.8, lineHeight: '1.6', marginBottom: '3rem' }}>
+                        We're on a mission to bring Lifesize Plans to every major city. Interested in bringing our patented technology to your region?
+                    </p>
+                    <Link to="/license" className="lime-button-pill" style={{
+                        display: 'inline-block',
+                        background: '#32CD32',
+                        color: '#000',
+                        padding: '1.4rem 4rem',
+                        borderRadius: '50px',
+                        textDecoration: 'none',
+                        fontSize: '1.2rem',
+                        fontWeight: 950,
+                        cursor: 'pointer',
+                        textTransform: 'uppercase',
+                        boxShadow: '0 10px 30px rgba(50,205,50,0.3)'
+                    }}>
+                        BECOME A PARTNER
+                    </Link>
+                </div>
+            </section>
         </div>
     );
 }
