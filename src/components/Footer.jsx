@@ -7,8 +7,8 @@ function Footer() {
             <div className="container">
                 <div className="footer-centered-content">
                     <div className="footer-logo-main">
-                        <div className="logo-top">GRUHAMS</div>
-                        <div className="logo-bottom">PLANS</div>
+                        <div className="logo-top">GRUHAMS_XR</div>
+                        <div className="logo-bottom">STUDIO</div>
                     </div>
 
                     <div className="footer-contact-info">
@@ -33,10 +33,10 @@ function Footer() {
 
                 <div className="footer-bottom-bar">
                     <div className="footer-bottom-left">
-                        © Gruhams Plans 2026. All rights reserved | Terms of Service | Privacy Policy
+                        © Gruhams_XR_Studio 2026. All rights reserved | Terms of Service | Privacy Policy
                     </div>
                     <div className="footer-bottom-right">
-                        Website by Gruhams XR
+                        Website by Gruhams_XR_Studio
                     </div>
                 </div>
             </div>

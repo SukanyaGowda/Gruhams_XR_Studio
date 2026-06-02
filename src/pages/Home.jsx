@@ -125,7 +125,7 @@ function Home() {
                         <div className="video-aspect-ratio">
                             <iframe
                                 src="https://www.youtube.com/embed/e_w_OJaHtvY?autoplay=1&mute=1&controls=0&loop=1&playlist=e_w_OJaHtvY&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1"
-                                title="Gruhams Plans Experience"
+                                title="Gruhams XR Studio Experience"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowFullScreen
@@ -337,7 +337,7 @@ function Home() {
             <section className="events-video-section" style={{ padding: '4rem 0', background: '#fff' }}>
                 <div className="container">
                     <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-                        <h2 style={{ fontSize: '3.5rem', fontWeight: 900, color: '#D4AF37', textTransform: 'uppercase', marginBottom: '1rem' }}>Host Your Next Event at Lifesize Plans</h2>
+                        <h2 style={{ fontSize: '3.5rem', fontWeight: 900, color: '#D4AF37', textTransform: 'uppercase', marginBottom: '1rem' }}>Host Your Next Event at Gruhams XR Studio</h2>
                         <p style={{ fontSize: '1.5rem', fontWeight: 700 }}>A unique, immersive venue perfect for showcasing your brand.</p>
                     </div>
 
@@ -383,7 +383,7 @@ function Home() {
                                 <h2 className="google-rating-title">We're Rated 4.9 Stars on Google!</h2>
                                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                                     <a
-                                        href="https://www.google.com/search?q=Gruhams+Plans+Reviews"
+                                        href="https://www.google.com/search?q=Gruhams_XR_Studio+Reviews"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="google-reviews-cta"
@@ -422,7 +422,7 @@ function Home() {
 
                                 <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', maxWidth: '1200px', margin: '0 auto', paddingBottom: '1rem' }}>
                                     {[
-                                        { title: 'Trailblazing Technology', text: 'Lifesize Plans is an original, world-first with our Innovative Patented Technology' },
+                                        { title: 'Trailblazing Technology', text: 'Gruhams XR Studio is an original, world-first with our Innovative Patented Technology' },
                                         { title: 'Customer Satisfaction', text: 'With a 4.9/5 Google Rating, our commitment to your satisfaction is unmatched.' },
                                         { title: 'Industry Recognition', text: 'We\'re regularly featured in the media and winning awards for innovation.' },
                                         { title: 'Special Mention', text: 'As PropTech\'s Highest Achiever of the Year 2022, we\'re known for our innovation.' }

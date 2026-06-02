@@ -42,9 +42,9 @@ const ModelingPricing = () => {
     ];
 
     return (
-        <section className="modeling-pricing-section">
-            <div className="container" style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                <button className="gold-button-pill shadow-btn" style={{ marginBottom: '4rem' }}>
+        <section className="modeling-pricing-section" style={{ padding: '2rem 0' }}>
+            <div className="container" style={{ textAlign: 'center', marginBottom: '2rem' }}>
+                <button className="gold-button-pill shadow-btn" style={{ marginBottom: '2.5rem' }}>
                     <span className="btn-icon">📞</span> CALL US
                 </button>
 
@@ -68,7 +68,7 @@ const ModelingPricing = () => {
                     ))}
                 </div>
 
-                <div className="modeling-grid" style={{ marginTop: '3rem' }}>
+                <div className="modeling-grid" style={{ marginTop: '2rem' }}>
                     {advancedServices.map((s, i) => (
                         <div key={i} className="modeling-card">
                             <div className="modeling-icon-box">{i === 2 ? '📱' : '🏠'}</div>
@@ -79,7 +79,7 @@ const ModelingPricing = () => {
                                 {s.list && (
                                     <ul className="m-features" style={{ listStyle: 'none', paddingLeft: 0 }}>
                                         {s.list.map((item, ii) => (
-                                            <li key={ii} style={{ marginBottom: '0.5rem' }}>• {item}</li>
+                                            <li key={ii} style={{ marginBottom: '0.4rem' }}>• {item}</li>
                                         ))}
                                     </ul>
                                 )}
@@ -93,34 +93,6 @@ const ModelingPricing = () => {
                             </div>
                         </div>
                     ))}
-                </div>
-            </div>
-
-            <div className="conversion-section" style={{ background: '#fcfcfc', borderTop: '1px solid #eee' }}>
-                <div className="container">
-                    <h2 className="conversion-title" style={{ color: '#D4AF37', fontSize: '2.5rem' }}>Contact us to convert your floor plans into clear, accurate 3D models.</h2>
-                    <ul className="conversion-list">
-                        <li>
-                            <strong style={{ color: '#D4AF37', fontSize: '1.5rem' }}>Walkable Mode</strong>
-                            <p style={{ fontSize: '1.2rem', fontWeight: 700 }}>Move through your design at full scale to understand spatial flow and proportions.</p>
-                        </li>
-                        <li>
-                            <strong style={{ color: '#D4AF37', fontSize: '1.5rem' }}>Tabletop Mode</strong>
-                            <p style={{ fontSize: '1.2rem', fontWeight: 700 }}>Review and collaborate around the design quickly on a tablet or screen.</p>
-                        </li>
-                        <li>
-                            <strong style={{ color: '#D4AF37', fontSize: '1.5rem' }}>Dollhouse View</strong>
-                            <p style={{ fontSize: '1.2rem', fontWeight: 700 }}>See the entire layout from above for instant context and orientation.</p>
-                        </li>
-                        <li>
-                            <strong style={{ color: '#D4AF37', fontSize: '1.5rem' }}>Virtual Reality (VR)</strong>
-                            <p style={{ fontSize: '1.2rem', fontWeight: 700 }}>Step inside the project with an immersive virtual walkthrough of the finished space.</p>
-                        </li>
-                        <li>
-                            <strong style={{ color: '#D4AF37', fontSize: '1.5rem' }}>On-Site Augmented Reality (AR)</strong>
-                            <p style={{ fontSize: '1.2rem', fontWeight: 700 }}>Position the proposed building directly on the site before construction.</p>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </section>

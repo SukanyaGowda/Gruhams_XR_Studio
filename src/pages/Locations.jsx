@@ -18,7 +18,7 @@ function Locations() {
             <header className="page-header dark" style={{ textAlign: 'center', marginBottom: '4rem' }}>
                 <div className="container">
                     <h1 style={{ fontSize: '4.5rem', fontWeight: 900, color: '#D4AF37', textTransform: 'uppercase', letterSpacing: '-2px' }}>Our Locations</h1>
-                    <p style={{ fontSize: '1.2rem', fontWeight: 700, opacity: 0.8 }}>Visit a Gruhams Plans studio near you to experience your project at 1:1 scale.</p>
+                    <p style={{ fontSize: '1.2rem', fontWeight: 700, opacity: 0.8 }}>Visit a Gruhams_XR_Studio near you to experience your project at 1:1 scale.</p>
                 </div>
             </header>
 

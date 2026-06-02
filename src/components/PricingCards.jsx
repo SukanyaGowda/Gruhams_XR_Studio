@@ -49,10 +49,6 @@ function PricingCards() {
 
     return (
         <section className="pricing-section-wrapper">
-            {/* Header with background "PLANS" text */}
-            <div className="pricing-title-area">
-                <h2 className="pricing-main-title">Pricing structure</h2>
-            </div>
 
             {/* Cards */}
             <div className="pricing-cards-row">

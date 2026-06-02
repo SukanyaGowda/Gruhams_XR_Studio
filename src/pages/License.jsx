@@ -5,7 +5,7 @@ function License() {
         <div className="page" style={{ padding: '8rem 4rem', textAlign: 'center' }}>
             <h1 style={{ fontSize: '4rem', fontWeight: 900, color: 'var(--accent-green)' }}>Licensing & Franchise</h1>
             <p style={{ fontSize: '1.5rem', marginTop: '2rem', maxWidth: '800px', margin: '2rem auto' }}>
-                Bring Gruhams Plans to your region. Become a partner in the global expansion of patented pre-construction technology.
+                Bring Gruhams_XR_Studio to your region. Become a partner in the global expansion of patented pre-construction technology.
             </p>
             <div className="reviews-grid" style={{ marginTop: '4rem' }}>
                 <div className="review-card" style={{ width: '100%', maxWidth: '400px' }}>

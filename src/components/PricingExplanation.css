@@ -1,0 +1,86 @@
+.pricing-explanation {
+    padding: 3rem 0 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.pricing-explanation .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.explanation-title {
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #000;
+    letter-spacing: -2px;
+    font-family: 'Inter', sans-serif;
+}
+
+.explanation-title .underline {
+    position: relative;
+    text-transform: lowercase;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.explanation-title .underline::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background-color: #32CD32;
+}
+
+.explanation-list {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.explanation-list li {
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    padding-left: 2.5rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.explanation-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #000;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.explanation-footer {
+    margin: 2rem 0;
+}
+
+.explanation-footer h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #000;
+    letter-spacing: -1px;
+}
+
+@media (max-width: 768px) {
+    .explanation-title {
+        font-size: 2.5rem;
+    }
+
+    .explanation-list li {
+        font-size: 1rem;
+    }
+}

@@ -5,17 +5,14 @@ function Navbar() {
     const location = useLocation();
     const [menuOpen, setMenuOpen] = useState(false);
 
-    // Header should be dark on all pages except the Home hero
-    const isDark = location.pathname !== '/';
-
     const toggleMenu = () => setMenuOpen(!menuOpen);
     const closeMenu = () => setMenuOpen(false);
 
     return (
-        <nav className={`navbar ${isDark ? 'dark' : ''} ${menuOpen ? 'nav-open-header' : ''}`}>
+        <nav className={`navbar dark ${menuOpen ? 'nav-open-header' : ''}`}>
             <Link to="/" className="logo-container" style={{ textDecoration: 'none' }} onClick={closeMenu}>
-                <div className="logo-top">GRUHAMS</div>
-                <div className="logo-bottom">PLANS</div>
+                <div className="logo-top">GRUHAMS_XR</div>
+                <div className="logo-bottom">STUDIO</div>
             </Link>
 
             {/* Hamburger button */}
@@ -42,12 +39,12 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                     <NavLink to="/book" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>
-                        BOOK NOW
+                        BOOK<br />NOW
                     </NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink to="/callback" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>
-                        REQUEST A CALL BACK
+                        REQUEST A CALL<br />BACK
                     </NavLink>
                 </li>
                 <li className="nav-item">
@@ -57,12 +54,12 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                     <NavLink to="/license" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>
-                        LICENSE AND FRANCHISE
+                        LICENSE AND<br />FRANCHISE
                     </NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink to="/locations" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>
-                        OUR LOCATIONS
+                        OUR<br />LOCATIONS
                     </NavLink>
                 </li>
             </ul>
