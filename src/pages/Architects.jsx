@@ -4,6 +4,7 @@ import studioTopView from '../assets/architect_studio_top_view_1780401810015.png
 import groupStudioImg from '../assets/architect_group_studio_1780402261770.png';
 import kitchenTopView from '../assets/studio_kitchen_top_view_1780402659062.png';
 import blueprintBg from '../assets/blueprint-bg.png';
+import GoogleReviews from '../components/GoogleReviews';
 
 function Architects() {
     const mediaLogosUrl = "https://web.archive.org/web/20251105111512im_/https://lifesizeplans.com.au/wp-content/uploads/2024/01/In-the-media.png";
@@ -12,33 +13,6 @@ function Architects() {
     const toggleFaq = (index) => {
         setOpenFaq(openFaq === index ? -1 : index);
     };
-
-    const reviews = [
-        {
-            id: 1,
-            author: "Nookarajesh Varma Sangadi",
-            date: "May 20, 2026",
-            rating: 5,
-            text: "This is such an amazing experience to go through plans. It was incredibly helpful to see the layout in full scale before we started building.",
-            avatar: "https://ui-avatars.com/api/?name=Nookarajesh+Varma+Sangadi&background=random"
-        },
-        {
-            id: 2,
-            author: "Julie Parnell",
-            date: "May 18, 2026",
-            rating: 5,
-            text: "What an amazing experience Lifesize Plans was to be able to walk through our future home. The team was so professional and the technology is mind-blowing.",
-            avatar: "https://ui-avatars.com/api/?name=Julie+Parnell&background=random"
-        },
-        {
-            id: 3,
-            author: "Vishesh Singh",
-            date: "March 29, 2026",
-            rating: 5,
-            text: "An absolute must when building. We had been reviewing our plans for months but seeing it at 1:1 scale changed everything for us. Highly recommend!",
-            avatar: "https://ui-avatars.com/api/?name=Vishesh+Singh&background=random"
-        }
-    ];
 
     const faqs = [
         {
@@ -173,7 +147,7 @@ function Architects() {
                     <p style={{ fontSize: '1.3rem', fontWeight: 700, lineHeight: '1.6', marginBottom: '3rem', opacity: 1, textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
                         Let's work out how to streamline your projects by incorporating Lifesize Plans' full scale walkthroughs into your design presentations.
                     </p>
-                    <Link to="/callback" className="lime-button-pill" style={{
+                    <Link to="/callback" className="gold-button-pill" style={{
                         display: 'inline-block',
                         background: '#D4AF37',
                         color: '#000',
@@ -183,7 +157,7 @@ function Architects() {
                         borderRadius: '50px',
                         textDecoration: 'none',
                         textTransform: 'uppercase',
-                        boxShadow: '0 10px 25px rgba(50,205,50,0.4)',
+                        boxShadow: '0 10px 25px rgba(212,175,55,0.4)',
                         transition: 'transform 0.3s ease'
                     }} onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'} onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}>
                         GET IN TOUCH
@@ -239,28 +213,7 @@ function Architects() {
                 </div>
             </section>
 
-            {/* SECTION 6: Google Reviews Grid */}
-            <section className="reviews-grid-section" style={{ padding: '4rem 2rem', background: '#fcfcfc', textAlign: 'center' }}>
-                <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2rem', marginBottom: '4rem' }}>
-                        {reviews.map(review => (
-                            <div key={review.id} style={{ background: '#fff', padding: '2.5rem', borderRadius: '15px', boxShadow: '0 15px 40px rgba(0,0,0,0.05)', textAlign: 'left', position: 'relative', border: '1px solid #eee' }}>
-                                <div style={{ position: 'absolute', top: '0', left: '0', background: '#D4AF37', color: '#fff', padding: '5px 12px', fontSize: '0.8rem', fontWeight: 900, borderTopLeftRadius: '15px', borderBottomRightRadius: '15px' }}>Google</div>
-                                <div style={{ color: '#FFD700', fontSize: '1.2rem', marginBottom: '1.5rem', marginTop: '1rem' }}>{"★".repeat(review.rating)}</div>
-                                <p style={{ fontSize: '1.05rem', color: '#444', lineHeight: '1.6', marginBottom: '2rem', fontWeight: 500 }}>"{review.text}" <span style={{ color: '#007bff', cursor: 'pointer' }}>Read more</span></p>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                                    <img src={review.avatar} alt={review.author} style={{ width: '50px', height: '50px', borderRadius: '50%' }} />
-                                    <div>
-                                        <h4 style={{ fontSize: '1.1rem', fontWeight: 950, marginBottom: '0.2rem' }}>{review.author}</h4>
-                                        <p style={{ fontSize: '0.9rem', color: '#888', fontWeight: 600 }}>{review.date}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                    <button style={{ background: '#000', color: '#fff', fontSize: '1rem', fontWeight: 900, padding: '1rem 3rem', borderRadius: '10px', border: 'none', cursor: 'pointer', textTransform: 'uppercase' }}>Load More</button>
-                </div>
-            </section>
+            <GoogleReviews />
 
             {/* SECTION 7: FAQ */}
             <section className="faq-section" style={{ padding: '5rem 2rem', background: '#fff', textAlign: 'center' }}>
@@ -298,27 +251,25 @@ function Architects() {
                     <h2 style={{ fontSize: '4rem', fontWeight: 950, color: '#fff', marginBottom: '1.5rem', letterSpacing: '-2px', textShadow: '0 2px 15px rgba(0,0,0,0.6)' }}>
                         Improve Client Satisfaction Now
                     </h2>
-                    <p style={{ fontSize: '1.4rem', fontWeight: 700, lineHeight: '1.6', marginBottom: '3.5rem', maxWidth: '800px', margin: '0 auto 3.5rem', textShadow: '0 2px 10px rgba(0,0,0,0.6)' }}>
-                        Eliminate client uncertainty and foster decisive action by making Lifesize Plans part of your design process.
+                    <p style={{ fontSize: '1.3rem', fontWeight: 700, lineHeight: '1.6', marginBottom: '3rem', opacity: 1, textShadow: '0 2px 15px rgba(0,0,0,0.6)' }}>
+                        Incorporate Gruhams XR Studio’s full scale walkthroughs into your project life cycle.
                     </p>
-                    <Link to="/callback" className="lime-button-pill" style={{
+                    <Link to="/callback" className="gold-button-pill" style={{
                         display: 'inline-block',
                         background: '#D4AF37',
                         color: '#000',
-                        fontSize: '1.3rem',
+                        fontSize: '1.2rem',
                         fontWeight: 950,
-                        padding: '1.4rem 4rem',
-                        borderRadius: '60px',
+                        padding: '1.2rem 3.5rem',
+                        borderRadius: '50px',
                         textDecoration: 'none',
                         textTransform: 'uppercase',
-                        boxShadow: '0 15px 40px rgba(50,205,50,0.5)',
-                        transition: 'all 0.3s ease'
+                        boxShadow: '0 10px 30px rgba(212,175,55,0.4)',
+                        transition: 'transform 0.3s ease'
                     }} onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'} onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}>
-                        CONTACT US TO DISCUSS WORKING TOGETHER
+                        BOOK A STUDIO WALKTHROUGH
                     </Link>
                 </div>
-                {/* Dots Decoration */}
-                <div style={{ position: 'absolute', top: '80px', left: '100px', opacity: 0.35, fontSize: '4.5rem', color: '#fff', letterSpacing: '15px', lineHeight: '0.8', fontWeight: 100 }}>•••••<br />•••••<br />•••••</div>
             </section>
         </div>
     );

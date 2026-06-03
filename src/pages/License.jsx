@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import kitchenTopView from '../assets/studio_kitchen_top_view_1780402659062.png';
+import GoogleReviews from '../components/GoogleReviews';
 
 function License() {
     const [formData, setFormData] = useState({
@@ -21,27 +22,6 @@ function License() {
         console.log('Form Submitted:', formData);
         alert('Thank you for your interest! We will get back to you shortly regarding your consultation.');
     };
-
-    const reviews = [
-        {
-            name: "Nookarajesh Varma Sangadi",
-            date: "May 20, 2026",
-            text: "This is such an amazing experience to go through plans",
-            image: "https://randomuser.me/api/portraits/men/32.jpg"
-        },
-        {
-            name: "Julie Parnell",
-            date: "May 18, 2026",
-            text: "What an amazing experience Lifesize Plans was to be able",
-            image: "https://randomuser.me/api/portraits/women/44.jpg"
-        },
-        {
-            name: "Vishesh Singh",
-            date: "March 29, 2026",
-            text: "An absolute must when building. We had been reviewing our",
-            image: "https://randomuser.me/api/portraits/men/85.jpg"
-        }
-    ];
 
     return (
         <div className="page license-page">
@@ -566,114 +546,7 @@ function License() {
                 </div>
             </section>
 
-            {/* GOOGLE REVIEWS SECTION (MATCHING SCREENSHOT) */}
-            <section className="license-reviews" style={{ padding: '4rem 2rem 6rem', background: '#f9f9f9' }}>
-                <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-                        gap: '2.5rem',
-                        marginBottom: '4rem'
-                    }}>
-                        {reviews.map((rev, idx) => (
-                            <div key={idx} style={{
-                                background: '#fff',
-                                padding: '2.5rem',
-                                borderRadius: '8px',
-                                boxShadow: '0 10px 40px rgba(0,0,0,0.05)',
-                                position: 'relative',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                overflow: 'hidden'
-                            }}>
-                                {/* Google Badge */}
-                                <div style={{
-                                    position: 'absolute',
-                                    left: 0,
-                                    top: '2.5rem',
-                                    background: '#34a853',
-                                    color: '#fff',
-                                    padding: '8px 4px',
-                                    writingMode: 'vertical-rl',
-                                    transform: 'rotate(180deg)',
-                                    fontSize: '0.8rem',
-                                    fontWeight: 700,
-                                    borderRadius: '0 4px 4px 0',
-                                    letterSpacing: '1px'
-                                }}>
-                                    Google
-                                </div>
-
-                                <div style={{ paddingLeft: '20px' }}>
-                                    {/* Stars */}
-                                    <div style={{ color: '#fbbc04', fontSize: '1.2rem', marginBottom: '1rem' }}>
-                                        ★★★★★
-                                    </div>
-
-                                    {/* Review Text */}
-                                    <p style={{ fontSize: '1.05rem', color: '#333', lineHeight: '1.6', marginBottom: '2.5rem' }}>
-                                        {rev.text} <span style={{ color: '#007bff', cursor: 'pointer' }}>Read more</span>
-                                    </p>
-
-                                    {/* Reviewer Details */}
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginTop: 'auto' }}>
-                                        <div style={{ position: 'relative' }}>
-                                            <img
-                                                src={rev.image}
-                                                alt={rev.name}
-                                                style={{ width: '50px', height: '50px', borderRadius: '50%', objectFit: 'cover' }}
-                                            />
-                                            {/* Google G icon overlay */}
-                                            <div style={{
-                                                position: 'absolute',
-                                                bottom: 0,
-                                                right: 0,
-                                                background: '#fff',
-                                                borderRadius: '50%',
-                                                padding: '2px',
-                                                boxShadow: '0 2px 5px rgba(0,0,0,0.2)'
-                                            }}>
-                                                <div style={{
-                                                    width: '16px',
-                                                    height: '16px',
-                                                    background: '#ea4335',
-                                                    borderRadius: '50%',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                    fontSize: '10px',
-                                                    color: '#fff',
-                                                    fontWeight: 900
-                                                }}>G</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h4 style={{ fontSize: '1rem', fontWeight: 700, margin: 0, color: '#000' }}>{rev.name}</h4>
-                                            <p style={{ fontSize: '0.85rem', color: '#888', margin: '4px 0 0' }}>{rev.date}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    <div style={{ textAlign: 'center' }}>
-                        <button style={{
-                            background: '#000',
-                            color: '#fff',
-                            padding: '0.8rem 2.5rem',
-                            borderRadius: '8px',
-                            border: 'none',
-                            fontWeight: 700,
-                            cursor: 'pointer',
-                            fontSize: '1rem',
-                            letterSpacing: '0.5px'
-                        }}>
-                            Load More
-                        </button>
-                    </div>
-                </div>
-            </section>
+            <GoogleReviews />
         </div>
     );
 }

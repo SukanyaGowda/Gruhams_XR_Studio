@@ -6,20 +6,20 @@ import avatar3 from '../assets/avatar3.png';
 const GoogleReviews = () => {
     const reviews = [
         {
-            name: "Raghavan Nair",
-            text: "The 1:1 scale walkthrough was a game changer for our new villa in Kochi. Saved us from making several expensive mistakes.",
+            name: "Nookarajesh Varma Sangadi",
+            text: "This is such an amazing experience to go through plans. It was incredibly helpful to see the layout in full scale before we started building.",
             date: "May 20, 2026",
             img: avatar1
         },
         {
-            name: "Sukanya Gowda",
-            text: "Amazing experience! Being able to walk through our floor plan before the first brick was laid gave us so much confidence.",
+            name: "Julie Parnell",
+            text: "What an amazing experience Lifesize Plans was to be able to walk through our future home. The team was so professional and the technology is mind-blowing.",
             date: "May 18, 2026",
             img: avatar2
         },
         {
-            name: "Praveen Kumar",
-            text: "Highly recommend Gruhams XR for anyone building a home. The immersive experience is unlike anything else in the industry.",
+            name: "Vishesh Singh",
+            text: "An absolute must when building. We had been reviewing our plans for months but seeing it at 1:1 scale changed everything for us. Highly recommend!",
             date: "March 29, 2026",
             img: avatar3
         }
