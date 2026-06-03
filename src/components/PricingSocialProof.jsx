@@ -47,7 +47,7 @@ const PricingSocialProof = () => {
                         }
                     ].map((r, i) => (
                         <div key={i} className="review-card-v2" style={{ flex: '1 1 280px', maxWidth: '350px', minWidth: '280px', textAlign: 'left', border: '1px solid #eee', borderRadius: '12px', overflow: 'hidden', background: '#fff' }}>
-                            <div className="review-google-side" style={{ background: '#28a745', color: '#fff', padding: '0.8rem 0.4rem', writingMode: 'vertical-lr', transform: 'rotate(180deg)', fontWeight: 800, textAlign: 'center', fontSize: '0.8rem' }}>Google</div>
+                            <div className="review-google-side" style={{ background: '#D4AF37', color: '#fff', padding: '0.8rem 0.4rem', writingMode: 'vertical-lr', transform: 'rotate(180deg)', fontWeight: 800, textAlign: 'center', fontSize: '0.8rem' }}>Google</div>
                             <div className="review-content-v2" style={{ padding: '1rem' }}>
                                 <div className="review-stars-small" style={{ color: '#ffb700', fontWeight: 800, marginBottom: '0.5rem', fontSize: '0.8rem' }}>5.0 ★★★★★</div>
                                 <p className="review-text-v2" style={{ fontSize: '0.9rem', fontWeight: 600, color: '#333', marginBottom: '0.8rem' }}>{r.text} <span className="read-more-link" style={{ color: '#007bff', cursor: 'pointer', fontSize: '0.8rem' }}>Read more</span></p>

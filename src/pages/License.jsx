@@ -61,7 +61,7 @@ function License() {
                     <h1 style={{
                         fontSize: '5rem',
                         fontWeight: 950,
-                        color: '#32CD32',
+                        color: '#D4AF37',
                         textTransform: 'uppercase',
                         letterSpacing: '-2px',
                         textShadow: '0 5px 20px rgba(0,0,0,0.5)'
@@ -229,11 +229,11 @@ function License() {
                                 <h3 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '1.5rem', color: '#000' }}>1. Pre-Installation Guidance:</h3>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     <li style={{ fontSize: '1.1rem', color: '#555', marginBottom: '1rem', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         Expert consultation on facility design, layout, and equipment selection to maximize efficiency and functionality.
                                     </li>
                                     <li style={{ fontSize: '1.1rem', color: '#555', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         Assistance with site assessments and technical specifications to meet your unique requirements.
                                     </li>
                                 </ul>
@@ -243,11 +243,11 @@ function License() {
                                 <h3 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '1.5rem', color: '#000' }}>2. Installation and Setup:</h3>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     <li style={{ fontSize: '1.1rem', color: '#555', marginBottom: '1rem', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         Full installation of projection systems, software, and equipment by our specialized team.
                                     </li>
                                     <li style={{ fontSize: '1.1rem', color: '#555', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         Calibration and testing to ensure seamless functionality and precision.
                                     </li>
                                 </ul>
@@ -257,11 +257,11 @@ function License() {
                                 <h3 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '1.5rem', color: '#000' }}>3. Training:</h3>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     <li style={{ fontSize: '1.1rem', color: '#555', marginBottom: '1rem', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         Hands-on training for your staff in operating projection systems, managing software, and delivering customer experiences.
                                     </li>
                                     <li style={{ fontSize: '1.1rem', color: '#555', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         Access to online resources, tutorials, and guides for ongoing skill enhancement.
                                     </li>
                                 </ul>
@@ -271,11 +271,11 @@ function License() {
                                 <h3 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '1.5rem', color: '#000' }}>4. Technical Support:</h3>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     <li style={{ fontSize: '1.1rem', color: '#555', marginBottom: '1rem', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         Dedicated global support team available to assist with troubleshooting, maintenance, and software updates.
                                     </li>
                                     <li style={{ fontSize: '1.1rem', color: '#555', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         Regular system check-ups and access to advanced support plans if required.
                                     </li>
                                 </ul>
@@ -288,11 +288,11 @@ function License() {
                                 <h3 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '1.5rem', color: '#000' }}>1. Growth Support:</h3>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     <li style={{ fontSize: '1.1rem', color: '#555', marginBottom: '1rem', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         Access to marketing materials, branding assets, and strategies to drive business growth in your area.
                                     </li>
                                     <li style={{ fontSize: '1.1rem', color: '#555', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         Inclusion in global campaigns to enhance visibility and attract customers.
                                     </li>
                                 </ul>
@@ -302,11 +302,11 @@ function License() {
                                 <h3 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '1.5rem', color: '#000' }}>2. Ongoing Collaboration:</h3>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     <li style={{ fontSize: '1.1rem', color: '#555', marginBottom: '1rem', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         A global network of partners to share insights, best practices, and innovations.
                                     </li>
                                     <li style={{ fontSize: '1.1rem', color: '#555', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         Continuous improvements in technology and operations, delivered via software updates and system upgrades.
                                     </li>
                                 </ul>
@@ -316,11 +316,11 @@ function License() {
                                 <h3 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '1.5rem', color: '#000' }}>3. Marketing:</h3>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     <li style={{ fontSize: '1.1rem', color: '#555', marginBottom: '1rem', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         Marketing SLA available tailored to each step of your journey and budget.
                                     </li>
                                     <li style={{ fontSize: '1.1rem', color: '#555', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         Brand vision and unified brand language, with a centralised website and social media management platform.
                                     </li>
                                 </ul>
@@ -330,11 +330,11 @@ function License() {
                                 <h3 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '1.5rem', color: '#000' }}>4. Technology and Creative Services:</h3>
                                 <ul style={{ listStyle: 'none', padding: 0 }}>
                                     <li style={{ fontSize: '1.1rem', color: '#555', marginBottom: '1rem', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         A central creative hub for partners to sell 3d rendering, CAD architectural plans and design services.
                                     </li>
                                     <li style={{ fontSize: '1.1rem', color: '#555', display: 'flex', gap: '10px' }}>
-                                        <span style={{ color: '#32CD32' }}>•</span>
+                                        <span style={{ color: '#D4AF37' }}>•</span>
                                         Group discounts on technology upgrades and service level agreements for global tech support.
                                     </li>
                                 </ul>

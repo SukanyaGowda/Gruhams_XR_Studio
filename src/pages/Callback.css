@@ -34,7 +34,7 @@
 .callback-title {
     font-size: 5.5rem;
     font-weight: 950;
-    color: #32CD32;
+    color: #D4AF37;
     margin-bottom: 3rem;
     text-transform: uppercase;
     line-height: 1.1;
@@ -156,7 +156,7 @@
 }
 
 .day-num.active-day {
-    background: #32CD32 !important;
+    background: #D4AF37 !important;
     color: #000 !important;
     box-shadow: 0 0 10px rgba(50, 205, 50, 0.4);
 }
@@ -171,7 +171,7 @@
     bottom: 4px;
     width: 3px;
     height: 3px;
-    background: #32CD32;
+    background: #D4AF37;
     border-radius: 50%;
 }
 
@@ -184,8 +184,8 @@
 
 .time-btn-callback {
     background: transparent;
-    border: 1px solid #32CD32;
-    color: #32CD32;
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
     padding: 1rem;
     font-weight: 900;
     font-size: 1rem;
@@ -200,7 +200,7 @@
 }
 
 .time-btn-callback.selected-time {
-    background: #32CD32;
+    background: #D4AF37;
     color: #000;
 }
 

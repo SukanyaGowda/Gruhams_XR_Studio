@@ -8,9 +8,9 @@ const PricingFooterCTA = () => {
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.8rem' }}>
                         <a
                             href="mailto:gruhams@gmail.com"
-                            className="green-pill-btn"
+                            className="gold-pill-btn"
                             style={{
-                                background: '#00D600',
+                                background: '#D4AF37',
                                 color: '#fff',
                                 padding: '0.6rem 2rem',
                                 borderRadius: '50px',
@@ -30,9 +30,9 @@ const PricingFooterCTA = () => {
 
                         <a
                             href="tel:0411534010"
-                            className="green-pill-btn"
+                            className="gold-pill-btn"
                             style={{
-                                background: '#00D600',
+                                background: '#D4AF37',
                                 color: '#fff',
                                 padding: '0.6rem 2rem',
                                 borderRadius: '50px',

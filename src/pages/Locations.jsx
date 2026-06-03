@@ -44,7 +44,7 @@ function Locations() {
                     <h1 style={{
                         fontSize: '5rem',
                         fontWeight: 950,
-                        color: '#32CD32',
+                        color: '#D4AF37',
                         textTransform: 'uppercase',
                         letterSpacing: '-2px',
                         textShadow: '0 5px 20px rgba(0,0,0,0.5)'
@@ -92,7 +92,7 @@ function Locations() {
                                 <div style={{
                                     display: 'inline-block',
                                     padding: '0.5rem 1.2rem',
-                                    background: loc.isLive ? '#32CD32' : '#eee',
+                                    background: loc.isLive ? '#D4AF37' : '#eee',
                                     color: loc.isLive ? '#fff' : '#888',
                                     borderRadius: '50px',
                                     fontSize: '0.8rem',
@@ -134,7 +134,7 @@ function Locations() {
                                         <button className="lime-button-pill" style={{
                                             width: '100%',
                                             background: '#000',
-                                            color: '#32CD32',
+                                            color: '#D4AF37',
                                             padding: '1.2rem',
                                             borderRadius: '50px',
                                             border: 'none',
@@ -145,11 +145,11 @@ function Locations() {
                                             letterSpacing: '1px',
                                             transition: 'all 0.3s'
                                         }} onMouseOver={(e) => {
-                                            e.currentTarget.style.background = '#32CD32';
+                                            e.currentTarget.style.background = '#D4AF37';
                                             e.currentTarget.style.color = '#fff';
                                         }} onMouseOut={(e) => {
                                             e.currentTarget.style.background = '#000';
-                                            e.currentTarget.style.color = '#32CD32';
+                                            e.currentTarget.style.color = '#D4AF37';
                                         }}>
                                             GET DIRECTIONS
                                         </button>
@@ -173,7 +173,7 @@ function Locations() {
                 color: '#fff'
             }}>
                 <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-                    <h2 style={{ fontSize: '3.5rem', fontWeight: 950, color: '#32CD32', marginBottom: '1.5rem', textTransform: 'uppercase' }}>
+                    <h2 style={{ fontSize: '3.5rem', fontWeight: 950, color: '#D4AF37', marginBottom: '1.5rem', textTransform: 'uppercase' }}>
                         Growing Globally
                     </h2>
                     <p style={{ fontSize: '1.3rem', fontWeight: 700, opacity: 0.8, lineHeight: '1.6', marginBottom: '3rem' }}>
@@ -181,7 +181,7 @@ function Locations() {
                     </p>
                     <Link to="/license" className="lime-button-pill" style={{
                         display: 'inline-block',
-                        background: '#32CD32',
+                        background: '#D4AF37',
                         color: '#000',
                         padding: '1.4rem 4rem',
                         borderRadius: '50px',

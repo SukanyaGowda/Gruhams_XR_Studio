@@ -42,7 +42,7 @@ const PricingQuoteForm = () => {
                                     outline: 'none',
                                     transition: 'border-color 0.3s ease'
                                 }}
-                                onFocus={(e) => e.target.style.borderColor = '#32CD32'}
+                                onFocus={(e) => e.target.style.borderColor = '#D4AF37'}
                                 onBlur={(e) => e.target.style.borderColor = '#eee'}
                             />
                         </div>
@@ -62,7 +62,7 @@ const PricingQuoteForm = () => {
                                     outline: 'none',
                                     transition: 'border-color 0.3s ease'
                                 }}
-                                onFocus={(e) => e.target.style.borderColor = '#32CD32'}
+                                onFocus={(e) => e.target.style.borderColor = '#D4AF37'}
                                 onBlur={(e) => e.target.style.borderColor = '#eee'}
                             />
                         </div>
@@ -84,7 +84,7 @@ const PricingQuoteForm = () => {
                                         outline: 'none',
                                         transition: 'border-color 0.3s ease'
                                     }}
-                                    onFocus={(e) => e.target.style.borderColor = '#32CD32'}
+                                    onFocus={(e) => e.target.style.borderColor = '#D4AF37'}
                                     onBlur={(e) => e.target.style.borderColor = '#eee'}
                                 />
                             </div>
@@ -96,7 +96,7 @@ const PricingQuoteForm = () => {
                                 width: '100%',
                                 padding: '1.5rem',
                                 borderRadius: '60px',
-                                background: '#32CD32',
+                                background: '#D4AF37',
                                 color: '#000',
                                 border: 'none',
                                 fontSize: '1.2rem',

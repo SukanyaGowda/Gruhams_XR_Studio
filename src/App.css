@@ -110,11 +110,11 @@ body {
 }
 
 .navbar.dark .nav-links a:hover {
-  color: #32CD32;
+  color: #D4AF37;
 }
 
 .nav-links a.active {
-  color: #32CD32 !important;
+  color: #D4AF37 !important;
   position: relative;
 }
 
@@ -126,7 +126,7 @@ body {
   transform: translateX(-50%);
   width: 100%;
   height: 3px;
-  background: #32CD32;
+  background: #D4AF37;
 }
 
 /* Hamburger button */
@@ -352,7 +352,7 @@ main {
 }
 
 .review-google-side {
-  background: #28a745;
+  background: #D4AF37;
   color: #fff;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
@@ -465,7 +465,7 @@ main {
   overflow: hidden;
 }
 
-.callout-headline-green {
+.callout-headline-gold {
   font-size: 4rem;
   font-weight: 900;
   color: #D4AF37;
@@ -474,7 +474,7 @@ main {
   text-transform: none;
 }
 
-.callout-sub-green {
+.callout-sub-gold {
   font-size: 1.6rem;
   font-weight: 700;
   color: #D4AF37;
@@ -596,11 +596,11 @@ main {
     padding: 3rem 1.5rem;
   }
 
-  .callout-headline-green {
+  .callout-headline-gold {
     font-size: 2.5rem;
   }
 
-  .callout-sub-green {
+  .callout-sub-gold {
     font-size: 1.2rem;
   }
 
@@ -775,7 +775,7 @@ main {
   margin-left: -1em;
 }
 
-.green-button {
+.gold-button {
   display: inline-flex;
   align-items: center;
   gap: 1rem;
@@ -1254,7 +1254,7 @@ h4 {
   opacity: 0.8;
 }
 
-.green-button.large {
+.gold-button.large {
   padding: 1.5rem 4rem;
   font-size: 1.2rem;
   border-radius: 100px;
@@ -1592,15 +1592,15 @@ h4 {
   }
 
   .nav-home-btn.active {
-    color: #32CD32 !important;
+    color: #D4AF37 !important;
   }
 
   .nav-links a.active {
-    color: #32CD32 !important;
+    color: #D4AF37 !important;
   }
 
   .nav-links a:hover {
-    color: #32CD32 !important;
+    color: #D4AF37 !important;
   }
 }
 
@@ -1625,8 +1625,8 @@ h4 {
 }
 
 /* Global Buttons */
-.green-button {
-  background: #28a745;
+.gold-button {
+  background: #D4AF37;
   color: #fff;
   padding: 1.2rem 3rem;
   border: none;
@@ -1641,7 +1641,7 @@ h4 {
   text-decoration: none;
 }
 
-.green-button:hover {
+.gold-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
 }
@@ -1673,7 +1673,7 @@ h4 {
     padding-top: 100px;
   }
 
-  .green-button {
+  .gold-button {
     padding: 1rem 2rem;
     font-size: 1rem;
   }

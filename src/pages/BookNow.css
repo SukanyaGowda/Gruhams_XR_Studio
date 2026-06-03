@@ -72,7 +72,7 @@
 .select-title {
     font-size: 2.2rem;
     font-weight: 950;
-    color: #32CD32;
+    color: #D4AF37;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -98,12 +98,12 @@
 
 .centered-list li::before {
     content: "•";
-    color: #32CD32;
+    color: #D4AF37;
     font-weight: 900;
 }
 
 .highlight {
-    color: #32CD32;
+    color: #D4AF37;
 }
 
 .booking-widget.square-widget {
@@ -167,7 +167,7 @@
     margin-bottom: 1.2rem;
     text-transform: uppercase;
     color: #111;
-    border-bottom: 3px solid #32CD32;
+    border-bottom: 3px solid #D4AF37;
     display: inline-block;
     padding-bottom: 6px;
 }
@@ -234,20 +234,20 @@
 
 .day-cell.available {
     background: #fff;
-    color: #32CD32;
+    color: #D4AF37;
     border: 1px solid #f2f2f2;
     cursor: pointer;
 }
 
 .day-cell.selected {
-    background: #32CD32 !important;
+    background: #D4AF37 !important;
     color: #fff !important;
 }
 
 .avail-indicator {
     width: 4px;
     height: 4px;
-    background: #32CD32;
+    background: #D4AF37;
     border-radius: 50%;
     position: absolute;
     bottom: 4px;
@@ -261,9 +261,9 @@
 
 .time-chip {
     padding: 0.8rem;
-    border: 2px solid #32CD32;
+    border: 2px solid #D4AF37;
     background: #fff;
-    color: #32CD32;
+    color: #D4AF37;
     font-size: 0.85rem;
     font-weight: 900;
     cursor: pointer;
@@ -271,7 +271,7 @@
 }
 
 .time-chip.active {
-    background: #32CD32;
+    background: #D4AF37;
     color: #fff;
 }
 
@@ -295,7 +295,7 @@
 }
 
 .input-group input:focus {
-    border-color: #32CD32;
+    border-color: #D4AF37;
 }
 
 .book-submit-btn.square {

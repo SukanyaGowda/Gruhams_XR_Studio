@@ -99,7 +99,7 @@ const Callback = () => {
 
                             <div className="time-col">
                                 <div className="time-slots-callback" style={{ marginTop: '2rem' }}>
-                                    <p style={{ fontSize: '0.8rem', fontWeight: 800, marginBottom: '1rem', color: '#32CD32' }}>AVAILABLE SLOTS:</p>
+                                    <p style={{ fontSize: '0.8rem', fontWeight: 800, marginBottom: '1rem', color: '#D4AF37' }}>AVAILABLE SLOTS:</p>
                                     {timeSlots.map(time => (
                                         <button
                                             key={time}

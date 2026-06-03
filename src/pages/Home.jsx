@@ -84,8 +84,8 @@ const Home = () => {
             <section className="callout-section">
                 <div className="container">
                     <div className="callout-content-top">
-                        <h2 className="callout-headline-green" style={{ color: '#D4AF37' }}>Build it right — before you build it.</h2>
-                        <h3 className="callout-sub-green" style={{ color: '#D4AF37' }}>Your pre-construction risk protection system</h3>
+                        <h2 className="callout-headline-gold" style={{ color: '#D4AF37' }}>Build it right — before you build it.</h2>
+                        <h3 className="callout-sub-gold" style={{ color: '#D4AF37' }}>Your pre-construction risk protection system</h3>
 
                         <div className="callout-description-bold">
                             <p>Experience your home at full scale with professional construction insight prior to build.</p>
@@ -393,7 +393,7 @@ const Home = () => {
                                         className="google-reviews-cta"
                                         style={{
                                             background: '#000',
-                                            color: '#00D600',
+                                            color: '#D4AF37',
                                             border: 'none',
                                             borderRadius: '50px',
                                             padding: '1.3rem 3.5rem',
@@ -408,7 +408,7 @@ const Home = () => {
                                             textDecoration: 'none'
                                         }}
                                     >
-                                        <span style={{ color: '#00D600', fontSize: '1.8rem' }}>🏅</span> READ OUR REVIEWS ON GOOGLE
+                                        <span style={{ color: '#D4AF37', fontSize: '1.8rem' }}>🏅</span> READ OUR REVIEWS ON GOOGLE
                                     </a>
                                 </div>
                             </div>

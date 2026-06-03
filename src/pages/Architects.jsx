@@ -175,7 +175,7 @@ function Architects() {
                     </p>
                     <Link to="/callback" className="lime-button-pill" style={{
                         display: 'inline-block',
-                        background: '#32CD32',
+                        background: '#D4AF37',
                         color: '#000',
                         fontSize: '1.2rem',
                         fontWeight: 950,
@@ -245,7 +245,7 @@ function Architects() {
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2rem', marginBottom: '4rem' }}>
                         {reviews.map(review => (
                             <div key={review.id} style={{ background: '#fff', padding: '2.5rem', borderRadius: '15px', boxShadow: '0 15px 40px rgba(0,0,0,0.05)', textAlign: 'left', position: 'relative', border: '1px solid #eee' }}>
-                                <div style={{ position: 'absolute', top: '0', left: '0', background: '#32CD32', color: '#fff', padding: '5px 12px', fontSize: '0.8rem', fontWeight: 900, borderTopLeftRadius: '15px', borderBottomRightRadius: '15px' }}>Google</div>
+                                <div style={{ position: 'absolute', top: '0', left: '0', background: '#D4AF37', color: '#fff', padding: '5px 12px', fontSize: '0.8rem', fontWeight: 900, borderTopLeftRadius: '15px', borderBottomRightRadius: '15px' }}>Google</div>
                                 <div style={{ color: '#FFD700', fontSize: '1.2rem', marginBottom: '1.5rem', marginTop: '1rem' }}>{"★".repeat(review.rating)}</div>
                                 <p style={{ fontSize: '1.05rem', color: '#444', lineHeight: '1.6', marginBottom: '2rem', fontWeight: 500 }}>"{review.text}" <span style={{ color: '#007bff', cursor: 'pointer' }}>Read more</span></p>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
@@ -303,7 +303,7 @@ function Architects() {
                     </p>
                     <Link to="/callback" className="lime-button-pill" style={{
                         display: 'inline-block',
-                        background: '#32CD32',
+                        background: '#D4AF37',
                         color: '#000',
                         fontSize: '1.3rem',
                         fontWeight: 950,

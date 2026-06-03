@@ -50,7 +50,7 @@ const BookNowSocialProof = () => {
                         }
                     ].map((r, i) => (
                         <div key={i} className="review-card-v2" style={{ flex: '1 1 300px', maxWidth: '380px', textAlign: 'left', border: '1px solid #eee', borderRadius: '16px', overflow: 'hidden', background: '#fff', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
-                            <div className="review-google-side" style={{ background: '#28a745', color: '#fff', padding: '1rem 0.6rem', writingMode: 'vertical-lr', transform: 'rotate(180deg)', fontWeight: 800, textAlign: 'center', fontSize: '0.9rem', letterSpacing: '1px' }}>GOOGLE</div>
+                            <div className="review-google-side" style={{ background: '#D4AF37', color: '#fff', padding: '1rem 0.6rem', writingMode: 'vertical-lr', transform: 'rotate(180deg)', fontWeight: 800, textAlign: 'center', fontSize: '0.9rem', letterSpacing: '1px' }}>GOOGLE</div>
                             <div className="review-content-v2" style={{ padding: '1.5rem' }}>
                                 <div className="review-stars-small" style={{ color: '#ffb700', fontWeight: 800, marginBottom: '0.8rem', fontSize: '1rem' }}>5.0 ★★★★★</div>
                                 <p className="review-text-v2" style={{ fontSize: '1rem', fontWeight: 600, color: '#333', marginBottom: '1.5rem', lineHeight: '1.6' }}>{r.text} <span className="read-more-link" style={{ color: '#007bff', cursor: 'pointer', fontSize: '0.8rem' }}>Read more</span></p>
