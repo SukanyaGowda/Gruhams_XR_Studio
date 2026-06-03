@@ -39,7 +39,7 @@ function License() {
             }}>
                 <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                     <h1 style={{
-                        fontSize: '5rem',
+                        fontSize: 'clamp(2.5rem, 6vw, 5rem)',
                         fontWeight: 950,
                         color: '#D4AF37',
                         textTransform: 'uppercase',
@@ -79,7 +79,7 @@ function License() {
             }}>
                 <div className="container">
                     <h2 style={{
-                        fontSize: '2.8rem',
+                        fontSize: 'clamp(1.8rem, 4vw, 2.8rem)',
                         fontWeight: 900,
                         color: '#000',
                         marginBottom: '2rem',
@@ -117,10 +117,10 @@ function License() {
             }}>
                 <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     <div className="pricing-title-area" style={{ position: 'relative', marginBottom: '2rem' }}>
-                        <span className="plans-bg-text" style={{ fontSize: '10rem', opacity: 0.1 }}>LICENSE</span>
+                        <span className="plans-bg-text" style={{ fontSize: 'clamp(4rem, 12vw, 10rem)', opacity: 0.1 }}>LICENSE</span>
                         <h2 style={{
                             position: 'relative',
-                            fontSize: '4rem',
+                            fontSize: 'clamp(2rem, 6vw, 4rem)',
                             fontWeight: 950,
                             color: '#000',
                             zIndex: 1,
@@ -182,7 +182,7 @@ function License() {
             }}>
                 <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     <h2 style={{
-                        fontSize: '3.5rem',
+                        fontSize: 'clamp(2rem, 5vw, 3.5rem)',
                         fontWeight: 950,
                         color: '#000',
                         marginBottom: '1rem'
@@ -449,7 +449,7 @@ function License() {
             {/* CONSULTATION FORM SECTION */}
             <section className="consultation-form" style={{ padding: '5rem 2rem', background: '#fff', borderTop: '1px solid #eee' }}>
                 <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
-                    <h2 style={{ fontSize: '3rem', fontWeight: 950, color: '#000', marginBottom: '1.5rem' }}>Book a consultation now</h2>
+                    <h2 style={{ fontSize: 'clamp(1.8rem, 5vw, 3rem)', fontWeight: 950, color: '#000', marginBottom: '1.5rem' }}>Book a consultation now</h2>
                     <p style={{ fontSize: '1.1rem', color: '#444', lineHeight: '1.8', marginBottom: '3rem' }}>
                         We are transitioning to a lifetime licensing model, providing a unique opportunity for facilities to join us as LSP partners. As a partner, you'll benefit from our comprehensive global support, marketing expertise, and design services. Together, we foster a culture of collaboration, innovation, and success, backed by a unified, worldwide team dedicated to your growth. <strong>Due to the sheer number of enquiries, we currently charge $400 USD for a professional consultation.</strong>
                     </p>

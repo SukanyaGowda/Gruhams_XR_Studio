@@ -51,19 +51,19 @@ body {
 }
 
 .logo-top {
-  font-size: 3.5rem;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
   font-weight: 900;
-  color: #fff;
+  color: #D4AF37;
   line-height: 0.8;
   letter-spacing: -2px;
 }
 
 .logo-bottom {
-  font-size: 3.5rem;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
   font-weight: 900;
   background: transparent;
   color: transparent;
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 2px #D4AF37;
   line-height: 0.8;
   letter-spacing: 2px;
 }
@@ -71,35 +71,35 @@ body {
 .navbar.dark {
   background: #000;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  padding: 0 4rem;
+  padding: 0 clamp(1.5rem, 4vw, 4rem);
   height: 100px;
   border-bottom: 2px solid #333;
 }
 
 .navbar.dark .logo-container {
   background: #000;
-  padding: 0 3rem;
-  margin-left: -4rem;
+  padding: 0 clamp(1.5rem, 3vw, 3rem);
+  margin-left: calc(-1 * clamp(1.5rem, 4vw, 4rem));
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 350px;
+  min-width: auto;
 }
 
 .navbar.dark .logo-top {
-  color: #fff;
+  color: #D4AF37;
 }
 
 .navbar.dark .logo-bottom {
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 2px #D4AF37;
 }
 
 .navbar.dark .nav-links {
   margin-top: 0;
   height: 100%;
   align-items: center;
-  gap: 2.5rem;
+  gap: clamp(0.5rem, 2vw, 2.5rem);
 }
 
 .navbar.dark .nav-links a {
@@ -169,9 +169,18 @@ body {
 }
 
 /* Mobile nav */
-@media (max-width: 900px) {
-  .navbar {
+@media (max-width: 1200px) {
+
+  .navbar,
+  .navbar.dark {
     padding: 1rem 1.5rem;
+    height: auto;
+  }
+
+  .navbar.dark .logo-container {
+    min-width: auto;
+    margin-left: 0;
+    padding: 0;
   }
 
   .logo-top,
@@ -308,7 +317,7 @@ main {
 }
 
 .stars-large {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   color: #ffb700;
   letter-spacing: 4px;
 }
@@ -320,7 +329,7 @@ main {
 }
 
 .reviews-main-title {
-  font-size: 3.5rem;
+  font-size: clamp(1.8rem, 5vw, 3rem);
   font-weight: 900;
   margin: 2rem 0;
   letter-spacing: -1px;
@@ -466,7 +475,7 @@ main {
 }
 
 .callout-headline-gold {
-  font-size: 4rem;
+  font-size: clamp(2rem, 6vw, 4rem);
   font-weight: 900;
   color: #D4AF37;
   line-height: 1.1;
@@ -504,7 +513,7 @@ main {
 }
 
 .feature-icon-box {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   flex-shrink: 0;
   padding-top: 0.2rem;
 }
@@ -597,7 +606,7 @@ main {
   }
 
   .callout-headline-gold {
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
   }
 
   .callout-sub-gold {
@@ -609,7 +618,7 @@ main {
   }
 
   .feature-icon-box {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
   }
 
   .feature-text-box h4 {
@@ -718,10 +727,18 @@ main {
 }
 
 .remorse-content h2 {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 8vw, 3.5rem);
   font-weight: 900;
   margin-bottom: 2rem;
-  line-height: 1;
+  line-height: 1.1;
+}
+
+@media (max-width: 900px) {
+  .remorse-section {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 2rem;
+  }
 }
 
 .feature-item {
@@ -730,8 +747,13 @@ main {
   margin-bottom: 2rem;
 }
 
+.faq-question {
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  color: #000;
+}
+
 .feature-icon {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   color: #000;
 }
 
@@ -751,7 +773,7 @@ main {
 }
 
 .info-section h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 900;
   margin-bottom: 2rem;
 }
@@ -806,7 +828,7 @@ main {
 
 .footer-logo .logo-top,
 .footer-logo .logo-bottom {
-  font-size: 3rem;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
 }
 
 .footer-contact {
@@ -847,7 +869,7 @@ main {
 
   .logo-top,
   .logo-bottom {
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem);
   }
 
   .nav-links {
@@ -855,7 +877,7 @@ main {
   }
 
   .callout-section h2 {
-    font-size: 3rem;
+    font-size: clamp(1.8rem, 4vw, 3rem);
   }
 }
 
@@ -873,7 +895,7 @@ main {
 }
 
 .pricing-header h1 {
-  font-size: 5rem;
+  font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 900;
   letter-spacing: -2px;
   text-transform: uppercase;
@@ -882,7 +904,7 @@ main {
 /* ===== New Pricing Section (matches reference images) ===== */
 
 .pricing-section-wrapper {
-  padding: 2rem 2rem 5rem;
+  padding: 1rem 1rem 2rem;
   background: #fff;
 }
 
@@ -903,7 +925,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 15rem;
+  font-size: clamp(4rem, 15vw, 15rem);
   font-weight: 950;
   color: transparent;
   -webkit-text-stroke: 2px rgba(0, 0, 0, 0.05);
@@ -915,7 +937,7 @@ main {
 
 .pricing-main-title {
   position: relative;
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 5vw, 3rem);
   font-weight: 900;
   color: #000;
   z-index: 1;
@@ -930,6 +952,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   flex-wrap: nowrap;
+  padding-top: 55px;
   /* Force one row */
 }
 
@@ -990,7 +1013,7 @@ main {
 }
 
 .p-card__badge-line1 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 900;
   color: #fff;
   font-style: italic;
@@ -998,7 +1021,7 @@ main {
 }
 
 .p-card__badge-line2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 900;
   color: #fff;
   font-style: italic;
@@ -1017,7 +1040,7 @@ main {
 
 /* Time */
 .p-card__time {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
   margin-bottom: 1rem;
 }
@@ -1042,7 +1065,7 @@ main {
 
 /* Price */
 .p-card__price {
-  font-size: 4.5rem;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 900;
   line-height: 1;
   margin-bottom: 1.5rem;
@@ -1086,6 +1109,13 @@ main {
   color: #000;
 }
 
+@media (max-width: 1100px) {
+  .p-card {
+    width: 320px;
+    padding: 2rem 1.5rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .pricing-cards-row {
     flex-direction: column;
@@ -1093,19 +1123,16 @@ main {
     gap: 2rem;
   }
 
-  .p-card--gold {
-    transform: none;
-    margin-top: 0;
-  }
-
   .p-card {
-    width: 90%;
-    max-width: 400px;
+    width: 95%;
+    max-width: 450px;
     border-radius: 20px !important;
     border: 1px solid #eee !important;
   }
 
   .p-card--gold {
+    transform: none;
+    margin-top: 0;
     border: none !important;
     border-radius: 30px !important;
   }
@@ -1115,25 +1142,10 @@ main {
   }
 }
 
-@media (max-width: 1100px) {
-  .p-card {
-    width: 300px;
-    padding: 2rem 1.5rem;
-  }
-}
-
 @media (max-width: 900px) {
   .pricing-cards-row {
     flex-wrap: wrap;
     gap: 2rem;
-  }
-
-  .p-card {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 20px !important;
-    transform: none !important;
-    border: 1px solid #eee !important;
   }
 }
 
@@ -1149,7 +1161,7 @@ main {
 }
 
 .page-header h1 {
-  font-size: 5rem;
+  font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -2px;
@@ -1175,7 +1187,7 @@ main {
 }
 
 .solutions-intro h2 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 900;
   margin-bottom: 1.5rem;
 }
@@ -1216,7 +1228,7 @@ h4 {
 }
 
 .solution-icon {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   color: #D4AF37;
   margin-bottom: 2rem;
 }
@@ -1234,6 +1246,11 @@ h4 {
   color: #444;
 }
 
+.custom-plan-title span {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  color: #666;
+}
+
 .cta-section.dark {
   background: #111;
   color: #fff;
@@ -1241,8 +1258,14 @@ h4 {
   text-align: center;
 }
 
+.faq-section h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
 .cta-section h2 {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 900;
   margin-bottom: 1rem;
 }
@@ -1273,7 +1296,7 @@ h4 {
 }
 
 .section-title-bold-small {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 900;
   margin-bottom: 1.5rem;
 }
@@ -1384,7 +1407,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   background: #fff;
   flex-shrink: 0;
 }
@@ -1430,7 +1453,7 @@ h4 {
 }
 
 .conversion-title {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
   text-align: center;
   margin-bottom: 4rem;
@@ -1490,14 +1513,14 @@ h4 {
 }
 
 .footer-logo-main .logo-top {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
   line-height: 0.8;
   letter-spacing: -2px;
 }
 
 .footer-logo-main .logo-bottom {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
   background: transparent;
   color: transparent;
@@ -1694,7 +1717,7 @@ h4 {
 }
 
 .google-rating-title {
-  font-size: 4.5rem;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 900;
   margin-bottom: 2.5rem;
   text-align: center;

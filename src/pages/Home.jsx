@@ -172,7 +172,7 @@ const Home = () => {
 
             <section className="conversion-section" style={{ background: '#fcfcfc', borderTop: '1px solid #eee' }}>
                 <div className="container">
-                    <h2 className="conversion-title" style={{ color: '#D4AF37', fontSize: '2.5rem', marginBottom: '2rem' }}>Contact us to convert your floor plans into clear, accurate 3D models.</h2>
+                    <h2 className="conversion-title" style={{ color: '#D4AF37', fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', marginBottom: '2rem' }}>Contact us to convert your floor plans into clear, accurate 3D models.</h2>
 
                     <div style={{ marginBottom: '4rem', textAlign: 'center' }}>
                         <button className="gold-button-pill shadow-btn">
@@ -286,7 +286,7 @@ const Home = () => {
             <section className="events-video-section" style={{ padding: '4rem 0', background: '#fff' }}>
                 <div className="container">
                     <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-                        <h2 style={{ fontSize: '3.5rem', fontWeight: 900, color: '#D4AF37', textTransform: 'uppercase', marginBottom: '1rem' }}>Host Your Next Event at Gruhams XR Studio</h2>
+                        <h2 style={{ fontSize: 'clamp(2rem, 6vw, 3.5rem)', fontWeight: 900, color: '#D4AF37', textTransform: 'uppercase', marginBottom: '1rem' }}>Host Your Next Event at Gruhams XR Studio</h2>
                         <p style={{ fontSize: '1.5rem', fontWeight: 700 }}>A unique, immersive venue perfect for showcasing your brand.</p>
                     </div>
 
@@ -302,7 +302,7 @@ const Home = () => {
 
                     <div className="events-details-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', marginTop: '3rem' }}>
                         <div>
-                            <h3 style={{ color: '#D4AF37', fontSize: '2rem', fontWeight: 900, marginBottom: '1.5rem' }}>Ideal for:</h3>
+                            <h3 style={{ color: '#D4AF37', fontSize: 'clamp(1.5rem, 4vw, 2rem)', fontWeight: 900, marginBottom: '1.5rem' }}>Ideal for:</h3>
                             <ul style={{ listStyle: 'none', padding: 0, fontSize: '1.2rem', fontWeight: 700, lineHeight: '1.8' }}>
                                 <li><span style={{ color: '#D4AF37', marginRight: '10px' }}>•</span> Conferences & corporate events</li>
                                 <li><span style={{ color: '#D4AF37', marginRight: '10px' }}>•</span> Product launches & media briefings</li>
@@ -313,7 +313,7 @@ const Home = () => {
                             </ul>
                         </div>
                         <div>
-                            <h3 style={{ color: '#D4AF37', fontSize: '2rem', fontWeight: 900, marginBottom: '1.5rem' }}>Our team can assist with:</h3>
+                            <h3 style={{ color: '#D4AF37', fontSize: 'clamp(1.5rem, 4vw, 2rem)', fontWeight: 900, marginBottom: '1.5rem' }}>Our team can assist with:</h3>
                             <ul style={{ listStyle: 'none', padding: 0, fontSize: '1.2rem', fontWeight: 700, lineHeight: '1.8' }}>
                                 <li><span style={{ color: '#D4AF37', marginRight: '10px' }}>•</span> Catering coordination</li>
                                 <li><span style={{ color: '#D4AF37', marginRight: '10px' }}>•</span> PA and presentation systems</li>
@@ -359,7 +359,7 @@ const Home = () => {
                             </div>
 
                             <div className="awards-branding-box">
-                                <h3 style={{ fontSize: '2.2rem', fontWeight: 900, marginBottom: '3rem', textAlign: 'center' }}>Award-Winning Innovation and Service</h3>
+                                <h3 style={{ fontSize: 'clamp(1.5rem, 4vw, 2.2rem)', fontWeight: 900, marginBottom: '3rem', textAlign: 'center' }}>Award-Winning Innovation and Service</h3>
 
                                 <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '5rem' }}>
                                     <img

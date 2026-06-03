@@ -11,7 +11,7 @@ function Navbar() {
     return (
         <nav className={`navbar dark ${menuOpen ? 'nav-open-header' : ''}`}>
             <Link to="/" className="logo-container" style={{ textDecoration: 'none' }} onClick={closeMenu}>
-                <div className="logo-top">GRUHAMS_XR</div>
+                <div className="logo-top">GRUHAMS XR</div>
                 <div className="logo-bottom">STUDIO</div>
             </Link>
 
@@ -59,7 +59,7 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                     <NavLink to="/locations" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>
-                        OUR<br />LOCATIONS
+                        LOCATIONS
                     </NavLink>
                 </li>
             </ul>

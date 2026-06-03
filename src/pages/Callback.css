@@ -32,7 +32,7 @@
 }
 
 .callback-title {
-    font-size: 5.5rem;
+    font-size: clamp(2.5rem, 6vw, 5.5rem);
     font-weight: 950;
     color: #D4AF37;
     margin-bottom: 3rem;
@@ -206,7 +206,7 @@
 
 @media (max-width: 900px) {
     .callback-title {
-        font-size: 3rem;
+        font-size: clamp(1.8rem, 5vw, 3rem);
     }
 
     .selection-area {

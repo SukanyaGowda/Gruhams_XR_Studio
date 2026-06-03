@@ -7,7 +7,7 @@ function Footer() {
             <div className="container">
                 <div className="footer-centered-content">
                     <div className="footer-logo-main">
-                        <div className="logo-top">GRUHAMS_XR</div>
+                        <div className="logo-top">GRUHAMS XR</div>
                         <div className="logo-bottom">STUDIO</div>
                     </div>
 

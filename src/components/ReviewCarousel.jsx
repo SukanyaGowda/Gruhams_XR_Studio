@@ -69,7 +69,7 @@ const ReviewCarousel = () => {
             <div className="carousel-container" style={{ maxWidth: '1400px', margin: '0 auto' }}>
                 <div className="carousel-header" style={{ textAlign: 'left', marginBottom: '3rem', paddingLeft: '5%' }}>
                     <p style={{ fontSize: '0.9rem', fontWeight: 800, textTransform: 'uppercase', color: '#666', letterSpacing: '1px' }}>What our lifesizers say about us</p>
-                    <h2 style={{ fontSize: '3.5rem', fontWeight: 950, color: '#000', marginTop: '0.5rem' }}>We're Rated 4.9 Stars on Google!</h2>
+                    <h2 style={{ fontSize: 'clamp(2rem, 6vw, 3.5rem)', fontWeight: 950, color: '#000', marginTop: '0.5rem' }}>We're Rated 4.9 Stars on Google!</h2>
                 </div>
 
                 <div className="carousel-main-layout" style={{ display: 'flex', gap: '3rem', alignItems: 'flex-start' }}>

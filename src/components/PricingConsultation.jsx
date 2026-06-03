@@ -6,7 +6,7 @@ const PricingConsultation = () => {
             {/* No Floorplans Section */}
             <section className="no-floorplans-section" style={{ padding: '3rem 0', background: '#fff' }}>
                 <div className="container" style={{ textAlign: 'center' }}>
-                    <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: '#D4AF37', textTransform: 'uppercase', marginBottom: '1rem' }}>NO FLOORPLANS YET?</h2>
+                    <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 900, color: '#D4AF37', textTransform: 'uppercase', marginBottom: '1rem' }}>NO FLOORPLANS YET?</h2>
                     <p style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '2rem' }}>contact our office for:</p>
 
                     <ul style={{
@@ -40,7 +40,7 @@ const PricingConsultation = () => {
             <section className="conversion-intro-section" style={{ padding: '3rem 0 2rem', background: '#fff', textAlign: 'center' }}>
                 <div className="container">
                     <h2 style={{
-                        fontSize: '2.5rem',
+                        fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
                         fontWeight: 900,
                         color: '#D4AF37',
                         lineHeight: '1.1',

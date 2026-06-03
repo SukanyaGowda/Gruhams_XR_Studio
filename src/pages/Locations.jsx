@@ -42,7 +42,7 @@ function Locations() {
             }}>
                 <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                     <h1 style={{
-                        fontSize: '5rem',
+                        fontSize: 'clamp(2.5rem, 6vw, 5rem)',
                         fontWeight: 950,
                         color: '#D4AF37',
                         textTransform: 'uppercase',
@@ -68,8 +68,8 @@ function Locations() {
             <section className="locations-list" style={{ padding: '6rem 2rem', background: '#fff' }}>
                 <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     <div className="pricing-title-area" style={{ position: 'relative', marginBottom: '4rem' }}>
-                        <span className="plans-bg-text" style={{ fontSize: '12rem', opacity: 0.1 }}>CITIES</span>
-                        <h2 style={{ position: 'relative', zIndex: 1, fontSize: '3.5rem', fontWeight: 950, color: '#000', textAlign: 'center', marginBottom: '2rem' }}>OUR STUDIOS</h2>
+                        <span className="plans-bg-text" style={{ fontSize: 'clamp(4rem, 15vw, 12rem)', opacity: 0.1 }}>CITIES</span>
+                        <h2 style={{ position: 'relative', zIndex: 1, fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 950, color: '#000', textAlign: 'center', marginBottom: '2rem' }}>OUR STUDIOS</h2>
                     </div>
                     <div style={{
                         display: 'grid',
@@ -105,7 +105,7 @@ function Locations() {
                                 </div>
 
                                 <h3 style={{
-                                    fontSize: '3rem',
+                                    fontSize: 'clamp(1.8rem, 4vw, 3rem)',
                                     fontWeight: 950,
                                     color: loc.isLive ? '#000' : '#aaa',
                                     marginBottom: '1.5rem',
@@ -173,7 +173,7 @@ function Locations() {
                 color: '#fff'
             }}>
                 <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-                    <h2 style={{ fontSize: '3.5rem', fontWeight: 950, color: '#D4AF37', marginBottom: '1.5rem', textTransform: 'uppercase' }}>
+                    <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 950, color: '#D4AF37', marginBottom: '1.5rem', textTransform: 'uppercase' }}>
                         Growing Globally
                     </h2>
                     <p style={{ fontSize: '1.3rem', fontWeight: 700, opacity: 0.8, lineHeight: '1.6', marginBottom: '3rem' }}>

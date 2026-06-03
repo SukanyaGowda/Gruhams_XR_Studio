@@ -44,7 +44,7 @@ function Architects() {
                     ></iframe>
                 </div>
                 <div className="container" style={{ position: 'relative', zIndex: 2, padding: '6.5rem 2rem', textAlign: 'center' }}>
-                    <h1 style={{ color: '#fff', fontSize: '4rem', fontWeight: 950, marginBottom: '1.2rem', textTransform: 'uppercase', letterSpacing: '-1px' }}>Architects + Builders</h1>
+                    <h1 style={{ color: '#fff', fontSize: 'clamp(2rem, 6vw, 4rem)', fontWeight: 950, marginBottom: '1.2rem', textTransform: 'uppercase', letterSpacing: '-1px' }}>Architects + Builders</h1>
                     <p className="subtitle" style={{ color: '#fff', fontSize: '1.4rem', fontWeight: 700, maxWidth: '800px', margin: '0 auto', opacity: 0.9 }}>
                         The ultimate pre-construction risk protection system for your clients.
                     </p>
@@ -54,7 +54,7 @@ function Architects() {
             {/* SECTION 1: Transform Client Doubts */}
             <section className="transformation-section" style={{ padding: '4rem 2rem', background: '#fff', textAlign: 'center' }}>
                 <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
-                    <h2 style={{ fontSize: '2.8rem', fontWeight: 950, color: '#000', marginBottom: '2rem', letterSpacing: '-0.5px' }}>
+                    <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 950, color: '#000', marginBottom: '2rem', letterSpacing: '-0.5px' }}>
                         Transform Client Doubts into Lifesize Certainty
                     </h2>
                     <div style={{ fontSize: '1.1rem', color: '#444', lineHeight: '1.7', fontWeight: 600, maxWidth: '850px', margin: '0 auto' }}>
@@ -71,7 +71,7 @@ function Architects() {
             {/* SECTION 2: Partner Discounts & Logos */}
             <section className="partnership-section" style={{ padding: '4rem 2rem', background: '#fcfcfc', textAlign: 'center' }}>
                 <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
-                    <h2 style={{ fontSize: '2.8rem', fontWeight: 950, color: '#000', marginBottom: '2rem', letterSpacing: '-0.5px' }}>
+                    <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 950, color: '#000', marginBottom: '2rem', letterSpacing: '-0.5px' }}>
                         Partner with Purpose: Exclusive Volume Discounts
                     </h2>
                     <p style={{ fontSize: '1.1rem', color: '#444', lineHeight: '1.7', fontWeight: 600, maxWidth: '800px', margin: '0 auto', marginBottom: '4rem' }}>
@@ -141,7 +141,7 @@ function Architects() {
                 justifyContent: 'center'
             }}>
                 <div className="container" style={{ maxWidth: '900px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
-                    <h2 style={{ fontSize: '3.8rem', fontWeight: 950, color: '#fff', marginBottom: '1.5rem', letterSpacing: '-2px', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
+                    <h2 style={{ fontSize: 'clamp(2rem, 6vw, 3.8rem)', fontWeight: 950, color: '#fff', marginBottom: '1.5rem', letterSpacing: '-2px', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
                         Make Planning Your Projects Simpler
                     </h2>
                     <p style={{ fontSize: '1.3rem', fontWeight: 700, lineHeight: '1.6', marginBottom: '3rem', opacity: 1, textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
@@ -176,7 +176,7 @@ function Architects() {
                         </div>
                     </div>
                     <div style={{ flex: '1', minWidth: '400px' }}>
-                        <h2 style={{ fontSize: '3.2rem', fontWeight: 950, color: '#000', marginBottom: '3rem', lineHeight: '1.1' }}>
+                        <h2 style={{ fontSize: 'clamp(1.8rem, 5vw, 3.2rem)', fontWeight: 950, color: '#000', marginBottom: '3rem', lineHeight: '1.1' }}>
                             Full-Size Solutions for Full-Scale Impact
                         </h2>
 
@@ -219,7 +219,7 @@ function Architects() {
             <section className="faq-section" style={{ padding: '5rem 2rem', background: '#fff', textAlign: 'center' }}>
                 <div className="container" style={{ maxWidth: '900px', margin: '0 auto' }}>
                     <h4 style={{ fontSize: '0.9rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '1rem', opacity: 0.6 }}>FREQUENTLY ASKED QUESTIONS</h4>
-                    <h2 style={{ fontSize: '3.5rem', fontWeight: 950, color: '#000', marginBottom: '4rem' }}>Your Questions Answered</h2>
+                    <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 950, color: '#000', marginBottom: '4rem' }}>Your Questions Answered</h2>
                     <div style={{ textAlign: 'left' }}>
                         {faqs.map((faq, index) => (
                             <div key={index} style={{ marginBottom: '1.5rem' }}>
@@ -248,7 +248,7 @@ function Architects() {
                 justifyContent: 'center'
             }}>
                 <div className="container" style={{ maxWidth: '950px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
-                    <h2 style={{ fontSize: '4rem', fontWeight: 950, color: '#fff', marginBottom: '1.5rem', letterSpacing: '-2px', textShadow: '0 2px 15px rgba(0,0,0,0.6)' }}>
+                    <h2 style={{ fontSize: 'clamp(2rem, 6vw, 4rem)', fontWeight: 950, color: '#fff', marginBottom: '1.5rem', letterSpacing: '-2px', textShadow: '0 2px 15px rgba(0,0,0,0.6)' }}>
                         Improve Client Satisfaction Now
                     </h2>
                     <p style={{ fontSize: '1.3rem', fontWeight: 700, lineHeight: '1.6', marginBottom: '3rem', opacity: 1, textShadow: '0 2px 15px rgba(0,0,0,0.6)' }}>
