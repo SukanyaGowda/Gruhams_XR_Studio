@@ -3,9 +3,7 @@ import houseRender from '../assets/house-render.png';
 import shrinivasReddy from '../assets/shrinivas-reddy.png';
 import PricingCards from '../components/PricingCards';
 import arDemoImg from '../assets/ar-demo.png';
-import avatar1 from '../assets/avatar1.png';
-import avatar2 from '../assets/avatar2.png';
-import avatar3 from '../assets/avatar3.png';
+import GoogleReviews from '../components/GoogleReviews';
 
 const Home = () => {
     const mediaLogosUrl = "https://web.archive.org/web/20251105111512im_/https://lifesizeplans.com.au/wp-content/uploads/2024/01/In-the-media.png";
@@ -26,60 +24,7 @@ const Home = () => {
                 </div>
             </header>
 
-            <section className="reviews-section-v2">
-                <div className="container">
-                    <div className="reviews-top-stars-left">
-                        <p>hundreds of 5 star Google reviews</p>
-                        <div className="stars-large">★★★★★</div>
-                    </div>
-
-                    <div className="reviews-divider"></div>
-                    <h2 className="reviews-main-title" style={{ color: '#D4AF37' }}>Trusted by 5,000+ clients since 2016.</h2>
-                    <div className="reviews-divider"></div>
-
-                    <div className="reviews-grid-v2">
-                        {[
-                            {
-                                name: "Raghavan Nair",
-                                text: "The 1:1 scale walkthrough was a game changer for our new villa in Kochi. Saved us from making several expensive mistakes.",
-                                date: "May 20, 2026",
-                                img: avatar1
-                            },
-                            {
-                                name: "Sukanya Gowda",
-                                text: "Amazing experience! Being able to walk through our floor plan before the first brick was laid gave us so much confidence.",
-                                date: "May 18, 2026",
-                                img: avatar2
-                            },
-                            {
-                                name: "Praveen Kumar",
-                                text: "Highly recommend Gruhams XR for anyone building a home. The immersive experience is unlike anything else in the industry.",
-                                date: "March 29, 2026",
-                                img: avatar3
-                            }
-                        ].map((r, i) => (
-                            <div key={i} className="review-card-v2">
-                                <div className="review-google-side">Google</div>
-                                <div className="review-content-v2">
-                                    <div className="review-stars-small">5.0 ★★★★★</div>
-                                    <p className="review-text-v2">{r.text} <span className="read-more-link">Read more</span></p>
-
-                                    <div className="review-user-v2">
-                                        <div className="avatar-wrapper">
-                                            <img src={r.img} alt={r.name} className="review-avatar-v2" />
-                                            <div className="orange-star-badge">★</div>
-                                        </div>
-                                        <div className="review-user-info">
-                                            <div className="review-user-name">{r.name}</div>
-                                            <div className="review-user-date">{r.date}</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <GoogleReviews />
 
             <section className="callout-section">
                 <div className="container">
