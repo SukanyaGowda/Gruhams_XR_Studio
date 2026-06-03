@@ -1,4 +1,7 @@
 import React from 'react';
+import avatar1 from '../assets/avatar1.png';
+import avatar2 from '../assets/avatar2.png';
+import avatar3 from '../assets/avatar3.png';
 
 const BookNowSocialProof = () => {
     return (
@@ -9,9 +12,9 @@ const BookNowSocialProof = () => {
                 <div className="video-item" style={{ marginBottom: '4rem' }}>
                     <div className="video-aspect-ratio" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', boxShadow: '0 20px 50px rgba(0,0,0,0.1)' }}>
                         <iframe
-                            src="https://www.youtube.com/embed/Dyuy7D31mZ0?autoplay=1&mute=1&controls=0&loop=1&playlist=Dyuy7D31mZ0&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1"
+                            src="https://www.youtube.com/embed/uWRlhNymh5s?autoplay=1&mute=1&controls=0&loop=1&playlist=uWRlhNymh5s&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1&start=5"
                             title="Gruhams XR Studio Walkthrough"
-                            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                            style={{ position: 'absolute', top: '-60px', left: 0, width: '100%', height: 'calc(100% + 120px)', pointerEvents: 'none' }}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
@@ -28,22 +31,22 @@ const BookNowSocialProof = () => {
                 <div className="reviews-grid-v2" style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
                     {[
                         {
-                            name: "Nookarajesh Varma Sangadi",
-                            text: "This is such an amazing experience to go through plans",
+                            name: "Venkatesh Prasad",
+                            text: "Being able to see our layout at 1:1 scale in Bengaluru was unbelievable. It's the best investment we made for our project.",
                             date: "May 20, 2026",
-                            img: "https://i.pravatar.cc/150?u=nooka"
+                            img: avatar1
                         },
                         {
-                            name: "Julie Parnell",
-                            text: "What an amazing experience Lifesize Plans was to be able",
+                            name: "Lakshmi Narayan",
+                            text: "The walkthrough revealed that our kitchen was too tight. We fixed it instantly. Highly recommended for all home builders!",
                             date: "May 18, 2026",
-                            img: "https://i.pravatar.cc/150?u=julie"
+                            img: avatar2
                         },
                         {
-                            name: "Vishesh Singh",
-                            text: "An absolute must when building. We had been reviewing our",
+                            name: "Karthik Raja",
+                            text: "Excellent service and technology. The accuracy of the floor plans is spot on. Worth every rupee.",
                             date: "March 29, 2026",
-                            img: "https://i.pravatar.cc/150?u=vishesh"
+                            img: avatar3
                         }
                     ].map((r, i) => (
                         <div key={i} className="review-card-v2" style={{ flex: '1 1 300px', maxWidth: '380px', textAlign: 'left', border: '1px solid #eee', borderRadius: '16px', overflow: 'hidden', background: '#fff', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
@@ -90,9 +93,9 @@ const BookNowSocialProof = () => {
                 <div className="video-item" style={{ marginBottom: '2rem' }}>
                     <div className="video-aspect-ratio" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', boxShadow: '0 20px 50px rgba(0,0,0,0.1)' }}>
                         <iframe
-                            src="https://www.youtube.com/embed/Dyuy7D31mZ0?autoplay=1&mute=1&controls=0&loop=1&playlist=Dyuy7D31mZ0&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1"
+                            src="https://www.youtube.com/embed/e_w_OJaHtvY?autoplay=1&mute=1&controls=0&loop=1&playlist=e_w_OJaHtvY&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1"
                             title="Gruhams XR Studio Experience"
-                            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                            style={{ position: 'absolute', top: '-60px', left: 0, width: '100%', height: 'calc(100% + 120px)', pointerEvents: 'none' }}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen

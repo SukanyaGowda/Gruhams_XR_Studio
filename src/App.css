@@ -231,6 +231,12 @@ main {
   animation: fadeIn 0.5s ease;
 }
 
+.pricing-divider {
+  border-bottom: 2px solid #ddd;
+  width: 90%;
+  margin: 0 auto;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -542,7 +548,8 @@ main {
   width: 100%;
   height: calc(100% + 120px);
   /* Compensate for top/bottom clipping */
-  pointer-events: auto;
+  pointer-events: none;
+  /* Prevent YouTube UI interaction */
 }
 
 .callout-testimonial {
@@ -892,7 +899,18 @@ main {
 }
 
 .plans-bg-text {
-  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15rem;
+  font-weight: 950;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.05);
+  z-index: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .pricing-main-title {

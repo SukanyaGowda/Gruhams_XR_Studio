@@ -12,6 +12,7 @@ function Pricing() {
     return (
         <div className="page pricing">
             <PricingHero />
+            <div className="pricing-divider"></div>
             <PricingExplanation />
             <PricingCards />
             <PricingSocialProof />

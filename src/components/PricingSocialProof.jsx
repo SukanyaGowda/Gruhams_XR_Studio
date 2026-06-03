@@ -8,9 +8,10 @@ const PricingSocialProof = () => {
                 <div className="callout-video-main" style={{ marginBottom: '2rem' }}>
                     <div className="video-aspect-ratio" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', boxShadow: '0 20px 50px rgba(0,0,0,0.1)' }}>
                         <iframe
-                            src="https://www.youtube.com/embed/Dyuy7D31mZ0?autoplay=1&mute=1&controls=0&loop=1&playlist=Dyuy7D31mZ0&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1"
+                            src="https://www.youtube.com/embed/uWRlhNymh5s?autoplay=1&mute=1&controls=0&loop=1&playlist=uWRlhNymh5s&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1&start=5"
                             title="Gruhams XR Studio Walkthrough"
-                            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                            className="video-iframe-clipped"
+                            style={{ position: 'absolute', top: '-60px', left: 0, width: '100%', height: 'calc(100% + 120px)', pointerEvents: 'none' }}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen

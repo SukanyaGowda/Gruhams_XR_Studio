@@ -76,7 +76,7 @@ function License() {
                 <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '30px', boxShadow: '0 30px 60px rgba(0,0,0,0.15)' }}>
                         <iframe
-                            src="https://www.youtube.com/embed/Dyuy7D31mZ0?autoplay=1&mute=1&controls=1&rel=0"
+                            src="https://www.youtube.com/embed/uWRlhNymh5s?autoplay=1&mute=1&controls=1&rel=0&start=5"
                             title="Gruhams XR Bangalore Showcase"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -136,15 +136,19 @@ function License() {
                 textAlign: 'center'
             }}>
                 <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                    <h2 style={{
-                        fontSize: '4rem',
-                        fontWeight: 950,
-                        color: '#000',
-                        marginBottom: '4rem',
-                        textTransform: 'capitalize'
-                    }}>
-                        Lifetime Licensing
-                    </h2>
+                    <div className="pricing-title-area" style={{ position: 'relative', marginBottom: '2rem' }}>
+                        <span className="plans-bg-text" style={{ fontSize: '10rem', opacity: 0.1 }}>LICENSE</span>
+                        <h2 style={{
+                            position: 'relative',
+                            fontSize: '4rem',
+                            fontWeight: 950,
+                            color: '#000',
+                            zIndex: 1,
+                            textTransform: 'capitalize'
+                        }}>
+                            Lifetime Licensing
+                        </h2>
+                    </div>
 
                     <div style={{
                         display: 'grid',

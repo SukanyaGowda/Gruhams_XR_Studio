@@ -65,8 +65,12 @@ function Locations() {
             </header>
 
             {/* LOCATION CARDS SECTION */}
-            <section className="locations-list" style={{ padding: '8rem 2rem', background: '#fff' }}>
+            <section className="locations-list" style={{ padding: '6rem 2rem', background: '#fff' }}>
                 <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                    <div className="pricing-title-area" style={{ position: 'relative', marginBottom: '4rem' }}>
+                        <span className="plans-bg-text" style={{ fontSize: '12rem', opacity: 0.1 }}>CITIES</span>
+                        <h2 style={{ position: 'relative', zIndex: 1, fontSize: '3.5rem', fontWeight: 950, color: '#000', textAlign: 'center', marginBottom: '2rem' }}>OUR STUDIOS</h2>
+                    </div>
                     <div style={{
                         display: 'grid',
                         gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',

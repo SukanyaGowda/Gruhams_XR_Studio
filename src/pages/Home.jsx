@@ -3,8 +3,11 @@ import houseRender from '../assets/house-render.png';
 import shrinivasReddy from '../assets/shrinivas-reddy.png';
 import PricingCards from '../components/PricingCards';
 import arDemoImg from '../assets/ar-demo.png';
+import avatar1 from '../assets/avatar1.png';
+import avatar2 from '../assets/avatar2.png';
+import avatar3 from '../assets/avatar3.png';
 
-function Home() {
+const Home = () => {
     const mediaLogosUrl = "https://web.archive.org/web/20251105111512im_/https://lifesizeplans.com.au/wp-content/uploads/2024/01/In-the-media.png";
 
     return (
@@ -37,22 +40,22 @@ function Home() {
                     <div className="reviews-grid-v2">
                         {[
                             {
-                                name: "Nookarajesh Varma Sangadi",
-                                text: "This is such an amazing experience to go through plans",
+                                name: "Raghavan Nair",
+                                text: "The 1:1 scale walkthrough was a game changer for our new villa in Kochi. Saved us from making several expensive mistakes.",
                                 date: "May 20, 2026",
-                                img: "https://i.pravatar.cc/150?u=nooka"
+                                img: avatar1
                             },
                             {
-                                name: "Julie Parnell",
-                                text: "What an amazing experience Lifesize Plans was to be able",
+                                name: "Sukanya Gowda",
+                                text: "Amazing experience! Being able to walk through our floor plan before the first brick was laid gave us so much confidence.",
                                 date: "May 18, 2026",
-                                img: "https://i.pravatar.cc/150?u=julie"
+                                img: avatar2
                             },
                             {
-                                name: "Vishesh Singh",
-                                text: "An absolute must when building. We had been reviewing our",
+                                name: "Praveen Kumar",
+                                text: "Highly recommend Gruhams XR for anyone building a home. The immersive experience is unlike anything else in the industry.",
                                 date: "March 29, 2026",
-                                img: "https://i.pravatar.cc/150?u=vishesh"
+                                img: avatar3
                             }
                         ].map((r, i) => (
                             <div key={i} className="review-card-v2">
@@ -344,7 +347,7 @@ function Home() {
 
                     <div className="video-aspect-ratio" style={{ paddingBottom: '50%', marginBottom: '3rem' }}>
                         <iframe
-                            src="https://www.youtube.com/embed/Dyuy7D31mZ0?autoplay=1&mute=1&controls=0&loop=1&playlist=Dyuy7D31mZ0&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1"
+                            src="https://www.youtube.com/embed/e_w_OJaHtvY?autoplay=1&mute=1&controls=0&loop=1&playlist=e_w_OJaHtvY&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&playsinline=1&start=8"
                             title="Event Hosting Experience"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -442,6 +445,6 @@ function Home() {
             </section>
         </div>
     );
-}
+};
 
 export default Home;
